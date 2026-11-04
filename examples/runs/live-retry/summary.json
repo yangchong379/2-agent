@@ -1,0 +1,78 @@
+{
+  "mode": "live_model",
+  "generated_at_utc": "2026-11-04T14:03:47.573488+00:00",
+  "python": "3.11.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "source_sha256": "603706ccb39768d768d287302067faeda7e8a66ac0784af2d052cfa15d1a57ad",
+  "cases": [
+    {
+      "case": "resume",
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "actual_cost_total": 14,
+      "charged_this_invocation": 8,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true,
+        "successful_asset_retained": true,
+        "search_executed_once": true,
+        "first_was_explicit_failure": true,
+        "resume_successful": true
+      },
+      "passed": true,
+      "result": "resume/result.json"
+    },
+    {
+      "case": "save_failure_resume",
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "actual_cost_total": 12,
+      "charged_this_invocation": 1,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true,
+        "successful_asset_retained": true,
+        "search_executed_once": true,
+        "first_was_explicit_failure": true,
+        "resume_successful": true,
+        "successful_script_retained": true,
+        "charged_only_save": true
+      },
+      "passed": true,
+      "result": "save_failure_resume/result.json"
+    },
+    {
+      "case": "no_assets",
+      "expected_status": "needs_materials",
+      "actual_status": "needs_materials",
+      "actual_cost_total": 6,
+      "charged_this_invocation": 6,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true
+      },
+      "passed": true,
+      "result": "no_assets/result.json"
+    }
+  ],
+  "boundary": "Simulated business tools, prices and durations; inspect actual live traces before claiming model decision quality.",
+  "real_model_decision_quality_verified": false,
+  "duration_seconds": 356.641,
+  "passed": 3,
+  "total": 3
+}

@@ -1,0 +1,125 @@
+{
+  "reviewed_at": "2026-11-04T22:13:53.507069+08:00",
+  "reviewer": "Codex AI assistant; actual trace/database audit, not independent human sign-off",
+  "source_sha256": "603706ccb39768d768d287302067faeda7e8a66ac0784af2d052cfa15d1a57ad",
+  "mode": "live_model",
+  "model": "deepseek-flash",
+  "passed": 3,
+  "total": 3,
+  "duration_seconds": 356.641,
+  "cases": [
+    {
+      "case": "resume",
+      "status": "completed",
+      "total_cost": 14,
+      "new_cost": 8,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true,
+        "successful_asset_retained": true,
+        "search_executed_once": true,
+        "first_was_explicit_failure": true,
+        "resume_successful": true,
+        "live_model": true,
+        "exact_state_cost": true,
+        "exact_elapsed": true,
+        "unique_attempts": true,
+        "ledger_matches_result": true,
+        "ledger_run_identity": true,
+        "dependency_and_no_double_charge": true,
+        "saved_claim_matches_database": true,
+        "prior_failed_no_saved_plan": true,
+        "old_attempts_preserved": true,
+        "invocation_delta_matches": true,
+        "successful_outputs_preserved": true,
+        "first_call_bounded": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "fb6d75bd2bfa5657dcdea3b5fe4effa6b0a898e6ba8ee7a6901f2fa7655c6788",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "first_run.json": "3bb6e1f3dd3165e72d7f640f8236759dcdf75a94a55c2d901dbcfd05e1753cca",
+        "input.json": "778bedb54e57f2a3eeede6a72e44f9ec53440e867e4956e90edcf711b341688d",
+        "result.json": "11a7ba4e2039d8cabca28be9d2c9a5ee95bff5c13c707b9363673df81fbfe632"
+      }
+    },
+    {
+      "case": "save_failure_resume",
+      "status": "completed",
+      "total_cost": 12,
+      "new_cost": 1,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true,
+        "successful_asset_retained": true,
+        "search_executed_once": true,
+        "first_was_explicit_failure": true,
+        "resume_successful": true,
+        "successful_script_retained": true,
+        "charged_only_save": true,
+        "live_model": true,
+        "exact_state_cost": true,
+        "exact_elapsed": true,
+        "unique_attempts": true,
+        "ledger_matches_result": true,
+        "ledger_run_identity": true,
+        "dependency_and_no_double_charge": true,
+        "saved_claim_matches_database": true,
+        "prior_failed_no_saved_plan": true,
+        "old_attempts_preserved": true,
+        "invocation_delta_matches": true,
+        "successful_outputs_preserved": true,
+        "first_call_bounded": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "425396d9b7e636e50ec20649ccbaaa4ac0cdc31ac8a13cd30820f5fd683347d7",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "first_run.json": "c3656d5e05237f320a336f0930552c44fcd2726a02bfc7d37adc08a24249398a",
+        "input.json": "7a49a2adb1c6b0a06308e770c2a13c89ce91395970f7b20755f8bddae7e9235a",
+        "result.json": "618a6b7a72f2bcba992255e493ef749ffb47dcfe8626770421e762dba2e5c97f"
+      }
+    },
+    {
+      "case": "no_assets",
+      "status": "needs_materials",
+      "total_cost": 6,
+      "new_cost": 6,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true,
+        "live_model": true,
+        "exact_state_cost": true,
+        "exact_elapsed": true,
+        "unique_attempts": true,
+        "ledger_matches_result": true,
+        "ledger_run_identity": true,
+        "dependency_and_no_double_charge": true,
+        "saved_claim_matches_database": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "5642febf3ab9e7ee3abd2361f73036994d317a1b1cf3bc3e11299b8ffd0f5820",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "input.json": "49c98eb3ec79f09849e92e90627024b21c4ad526ac202520cf00dc20d1992e6f",
+        "result.json": "781266b53c32760a20fda250758a7b82d6e0867d17edeab74eaf81c2a4bfd103"
+      }
+    }
+  ],
+  "explanation_and_efficiency_limits": [
+    "resume second invocation step 2 rationale guesses 11–13 before estimate returns actual projected total 14. Later actions use 14; immutable ledger and tools are authoritative.",
+    "resume selects feasible premium, not minimum-cost lean; no_assets tries both tiers in the same synthetic dataset and incurs 6 instead of offline policy 4. Passing checks does not prove optimal cost."
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "source_sha256": "603706ccb39768d768d287302067faeda7e8a66ac0784af2d052cfa15d1a57ad",
+  "source_changed_between_rounds": false,
+  "first_run": {
+    "directory": "live",
+    "passed": 10,
+    "total": 13
+  },
+  "targeted_retry": {
+    "directory": "live-retry",
+    "passed": 3,
+    "total": 3
+  },
+  "scenarios_with_passing_evidence": 13,
+  "distinct_scenarios": 13,
+  "single_full_run_all_passed": false,
+  "scope": "Selected passing evidence across first run and targeted retry. No statistical reliability claim. Original failures preserved; no runtime edits.",
+  "cases": [
+    {
+      "case": "normal",
+      "first_passed": true,
+      "retry_passed": null,
+      "selected_evidence": "live/normal/result.json",
+      "status": "completed",
+      "actual_cost_total": 12
+    },
+    {
+      "case": "missing_budget",
+      "first_passed": true,
+      "retry_passed": null,
+      "selected_evidence": "live/missing_budget/result.json",
+      "status": "needs_info",
+      "actual_cost_total": 0
+    },
+    {
+      "case": "missing_deadline",
+      "first_passed": true,
+      "retry_passed": null,
+      "selected_evidence": "live/missing_deadline/result.json",
+      "status": "needs_info",
+      "actual_cost_total": 0
+    },
+    {
+      "case": "budget_replan",
+      "first_passed": true,
+      "retry_passed": null,
+      "selected_evidence": "live/budget_replan/result.json",
+      "status": "completed",
+      "actual_cost_total": 8
+    },
+    {
+      "case": "deadline_replan",
+      "first_passed": true,
+      "retry_passed": null,
+      "selected_evidence": "live/deadline_replan/result.json",
+      "status": "completed",
+      "actual_cost_total": 8
+    },
+    {
+      "case": "tool_failure_replan",
+      "first_passed": true,
+      "retry_passed": null,
+      "selected_evidence": "live/tool_failure_replan/result.json",
+      "status": "completed",
+      "actual_cost_total": 11
+    },
+    {
+      "case": "persistent_failure",
+      "first_passed": true,
+      "retry_passed": null,
+      "selected_evidence": "live/persistent_failure/result.json",
+      "status": "tool_failed",
+      "actual_cost_total": 6
+    },
+    {
+      "case": "no_feasible",
+      "first_passed": true,
+      "retry_passed": null,
+      "selected_evidence": "live/no_feasible/result.json",
+      "status": "constraints_infeasible",
+      "actual_cost_total": 0
+    },
+    {
+      "case": "duplicate",
+      "first_passed": true,
+      "retry_passed": null,
+      "selected_evidence": "live/duplicate/result.json",
+      "status": "completed",
+      "actual_cost_total": 12
+    },
+    {
+      "case": "resume",
+      "first_passed": false,
+      "retry_passed": true,
+      "selected_evidence": "live-retry/resume/result.json",
+      "status": "completed",
+      "actual_cost_total": 14
+    },
+    {
+      "case": "save_failure_resume",
+      "first_passed": false,
+      "retry_passed": true,
+      "selected_evidence": "live-retry/save_failure_resume/result.json",
+      "status": "completed",
+      "actual_cost_total": 12
+    },
+    {
+      "case": "no_assets",
+      "first_passed": false,
+      "retry_passed": true,
+      "selected_evidence": "live-retry/no_assets/result.json",
+      "status": "needs_materials",
+      "actual_cost_total": 6
+    },
+    {
+      "case": "step_limit",
+      "first_passed": true,
+      "retry_passed": null,
+      "selected_evidence": "live/step_limit/result.json",
+      "status": "incomplete_step_limit",
+      "actual_cost_total": 4
+    }
+  ]
+}

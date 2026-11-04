@@ -2,10 +2,12 @@
   "timezone": "Asia/Hong_Kong",
   "first_recorded_at": "2026-11-04T18:07:25+08:00",
   "preparation_recorded_at": "2026-11-04T18:30:04.551079+08:00",
-  "elapsed_wall_clock_minutes": 49.36,
-  "scope": "AI implementation, dialogue, actual API evaluation, review and waiting through this evidence cutoff; not candidate independent coding time",
+  "elapsed_wall_clock_minutes": 247.57,
+  "scope": "AI implementation, dialogue, actual API evaluations, review and elapsed waiting through retry evidence cutoff; not candidate independent coding or continuous working time",
   "candidate_independent_coding_time": "not recorded",
   "final_evidence_recorded_at": "2026-11-04T18:56:46.643904+08:00",
   "live_evaluation_seconds": 888.984,
-  "live_scenario_results": "10/13 passed; 3 transport-affected failures retained; user deferred retry"
+  "live_scenario_results": "First run 10/13; targeted retry 3/3; same source, 13 distinct scenarios with passing evidence; not a single 13/13 run",
+  "retry_evidence_recorded_at": "2026-11-04T22:14:59.331691+08:00",
+  "live_retry_seconds": 356.641
 }
