@@ -1,0 +1,11 @@
+{
+  "runs": [
+    {
+      "id": "activity-000",
+      "fingerprint": "11fc2dfe79eaa2b29ef7b577b16647196ac37ad350f099161a46bb7fd565f6da",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[],\"last_error\":null,\"last_estimate\":null,\"request\":{\"budget\":null,\"deadline\":\"2026-11-05T09:40+08:00\",\"request_id\":\"activity-000\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"夏日旅行\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    }
+  ],
+  "attempts": [],
+  "plans": []
+}

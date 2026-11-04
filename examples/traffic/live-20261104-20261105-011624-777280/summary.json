@@ -1,0 +1,470 @@
+{
+  "mode": "live_model",
+  "seed": 20261104,
+  "arrivals": 24,
+  "generated_at_utc": "2026-11-04T17:32:10.596917+00:00",
+  "duration_seconds": 945.39,
+  "runtime_src_sha256": "0002a395b9f436f7ee3543921f0bc6058d5f35dad680d8c49c4bbb963061d0d1",
+  "harness_sha256": "fd4bc8fed017f1c8f7145c3070fbf0ae38bb1d0fedd2b490081c99aea1f9bd09",
+  "invariants_passed": 24,
+  "goals_met": 4,
+  "status_counts": {
+    "needs_info": 6,
+    "constraints_infeasible": 12,
+    "completed": 4,
+    "tool_failed": 1,
+    "request_rejected": 1
+  },
+  "records": [
+    {
+      "sequence": 1,
+      "statuses": [
+        "needs_info"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "001/result.json"
+    },
+    {
+      "sequence": 2,
+      "statuses": [
+        "constraints_infeasible"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "002/result.json"
+    },
+    {
+      "sequence": 3,
+      "statuses": [
+        "constraints_infeasible"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "003/result.json"
+    },
+    {
+      "sequence": 4,
+      "statuses": [
+        "needs_info"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "004/result.json"
+    },
+    {
+      "sequence": 5,
+      "statuses": [
+        "completed"
+      ],
+      "business_goal_met": true,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "005/result.json"
+    },
+    {
+      "sequence": 6,
+      "statuses": [
+        "constraints_infeasible"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "006/result.json"
+    },
+    {
+      "sequence": 7,
+      "statuses": [
+        "constraints_infeasible"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "007/result.json"
+    },
+    {
+      "sequence": 8,
+      "statuses": [
+        "tool_failed"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "008/result.json"
+    },
+    {
+      "sequence": 9,
+      "statuses": [
+        "constraints_infeasible"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "009/result.json"
+    },
+    {
+      "sequence": 10,
+      "statuses": [
+        "constraints_infeasible"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "010/result.json"
+    },
+    {
+      "sequence": 11,
+      "statuses": [
+        "completed"
+      ],
+      "business_goal_met": true,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "011/result.json"
+    },
+    {
+      "sequence": 12,
+      "statuses": [
+        "request_rejected"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "rejection_did_not_mutate_state": true
+      },
+      "invariants_passed": true,
+      "result": "012/result.json"
+    },
+    {
+      "sequence": 13,
+      "statuses": [
+        "constraints_infeasible"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "013/result.json"
+    },
+    {
+      "sequence": 14,
+      "statuses": [
+        "constraints_infeasible"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "014/result.json"
+    },
+    {
+      "sequence": 15,
+      "statuses": [
+        "completed"
+      ],
+      "business_goal_met": true,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "015/result.json"
+    },
+    {
+      "sequence": 16,
+      "statuses": [
+        "constraints_infeasible"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "016/result.json"
+    },
+    {
+      "sequence": 17,
+      "statuses": [
+        "constraints_infeasible"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "017/result.json"
+    },
+    {
+      "sequence": 18,
+      "statuses": [
+        "needs_info"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "018/result.json"
+    },
+    {
+      "sequence": 19,
+      "statuses": [
+        "constraints_infeasible"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "019/result.json"
+    },
+    {
+      "sequence": 20,
+      "statuses": [
+        "constraints_infeasible"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "020/result.json"
+    },
+    {
+      "sequence": 21,
+      "statuses": [
+        "needs_info"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "021/result.json"
+    },
+    {
+      "sequence": 22,
+      "statuses": [
+        "needs_info"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "022/result.json"
+    },
+    {
+      "sequence": 23,
+      "statuses": [
+        "needs_info"
+      ],
+      "business_goal_met": false,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "023/result.json"
+    },
+    {
+      "sequence": 24,
+      "statuses": [
+        "completed"
+      ],
+      "business_goal_met": true,
+      "checks": {
+        "bounded": true,
+        "ledger_sum": true,
+        "budget": true,
+        "deadline": true,
+        "saved_claim": true,
+        "old_attempts_immutable": true,
+        "dependency_and_no_rebilling": true,
+        "one_plan_per_task": true
+      },
+      "invariants_passed": true,
+      "result": "024/result.json"
+    }
+  ],
+  "boundary": "Synthetic serial event replay with shared database, not production traffic, concurrency benchmark or model reliability estimate. Mock is workflow-only. Arrival intents and faults frozen before running; synthetic operator follow-ups may approve only actual prior proposals. No expected ideal action path."
+}

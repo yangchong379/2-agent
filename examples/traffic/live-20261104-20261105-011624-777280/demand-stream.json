@@ -1,0 +1,338 @@
+[
+  {
+    "sequence": 1,
+    "arrival_minute": 0,
+    "operator": "运营C",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-000",
+      "topic": "夏日旅行",
+      "budget": null,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:40+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 2,
+    "arrival_minute": 5,
+    "operator": "运营A",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-001",
+      "topic": "夏日旅行",
+      "budget": 0,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T10:35+08:00"
+    },
+    "service_fault": "generate_script_always"
+  },
+  {
+    "sequence": 3,
+    "arrival_minute": 6,
+    "operator": "运营A",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-002",
+      "topic": "校园生活",
+      "budget": 5,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:40+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 4,
+    "arrival_minute": 10,
+    "operator": "运营C",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-003",
+      "topic": "校园生活",
+      "budget": null,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:50+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 5,
+    "arrival_minute": 14,
+    "operator": "运营A",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-004",
+      "topic": "校园生活",
+      "budget": 10,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:40+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 6,
+    "arrival_minute": 16,
+    "operator": "运营B",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-005",
+      "topic": "校园生活",
+      "budget": 0,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:50+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 7,
+    "arrival_minute": 20,
+    "operator": "运营A",
+    "intent": "repeat",
+    "request": {
+      "request_id": "activity-005",
+      "topic": "校园生活",
+      "budget": 0,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:50+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 8,
+    "arrival_minute": 22,
+    "operator": "运营C",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-007",
+      "topic": "夏日旅行",
+      "budget": 12,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T11:30+08:00"
+    },
+    "service_fault": "generate_script_always"
+  },
+  {
+    "sequence": 9,
+    "arrival_minute": 25,
+    "operator": "运营A",
+    "intent": "repeat",
+    "request": {
+      "request_id": "activity-001",
+      "topic": "夏日旅行",
+      "budget": 0,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T10:35+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 10,
+    "arrival_minute": 27,
+    "operator": "运营A",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-009",
+      "topic": "校园生活",
+      "budget": 12,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:20+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 11,
+    "arrival_minute": 30,
+    "operator": "运营A",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-010",
+      "topic": "校园生活",
+      "budget": 20,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:50+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 12,
+    "arrival_minute": 33,
+    "operator": "运营C",
+    "intent": "changed_same_id",
+    "request": {
+      "request_id": "activity-010",
+      "topic": "校园生活",
+      "budget": 21,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:50+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 13,
+    "arrival_minute": 36,
+    "operator": "运营C",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-012",
+      "topic": "校园生活",
+      "budget": 5,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T11:30+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 14,
+    "arrival_minute": 41,
+    "operator": "运营B",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-013",
+      "topic": "夏日旅行",
+      "budget": 5,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T11:30+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 15,
+    "arrival_minute": 43,
+    "operator": "运营C",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-014",
+      "topic": "夏日旅行",
+      "budget": 10,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:40+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 16,
+    "arrival_minute": 46,
+    "operator": "运营A",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-015",
+      "topic": "校园生活",
+      "budget": 0,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:20+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 17,
+    "arrival_minute": 48,
+    "operator": "运营A",
+    "intent": "repeat",
+    "request": {
+      "request_id": "activity-009",
+      "topic": "校园生活",
+      "budget": 12,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:20+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 18,
+    "arrival_minute": 53,
+    "operator": "运营B",
+    "intent": "repeat",
+    "request": {
+      "request_id": "activity-000",
+      "topic": "夏日旅行",
+      "budget": null,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:40+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 19,
+    "arrival_minute": 54,
+    "operator": "运营B",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-018",
+      "topic": "夏日旅行",
+      "budget": 5,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T10:35+08:00"
+    },
+    "service_fault": "generate_script_always"
+  },
+  {
+    "sequence": 20,
+    "arrival_minute": 58,
+    "operator": "运营C",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-019",
+      "topic": "校园生活",
+      "budget": 0,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:20+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 21,
+    "arrival_minute": 61,
+    "operator": "运营A",
+    "intent": "new",
+    "request": {
+      "request_id": "activity-020",
+      "topic": "校园生活",
+      "budget": 10,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": null
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 22,
+    "arrival_minute": 64,
+    "operator": "运营B",
+    "intent": "repeat",
+    "request": {
+      "request_id": "activity-003",
+      "topic": "校园生活",
+      "budget": null,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:50+08:00"
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 23,
+    "arrival_minute": 66,
+    "operator": "运营B",
+    "intent": "repeat",
+    "request": {
+      "request_id": "activity-020",
+      "topic": "校园生活",
+      "budget": 10,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": null
+    },
+    "service_fault": null
+  },
+  {
+    "sequence": 24,
+    "arrival_minute": 69,
+    "operator": "运营C",
+    "intent": "repeat",
+    "request": {
+      "request_id": "activity-014",
+      "topic": "夏日旅行",
+      "budget": 10,
+      "start_at": "2026-11-05T09:00+08:00",
+      "deadline": "2026-11-05T09:40+08:00"
+    },
+    "service_fault": null
+  }
+]

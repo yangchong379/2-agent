@@ -1,0 +1,23 @@
+{
+  "completed": 24,
+  "total": 24,
+  "latest": {
+    "sequence": 24,
+    "statuses": [
+      "completed"
+    ],
+    "business_goal_met": true,
+    "checks": {
+      "bounded": true,
+      "ledger_sum": true,
+      "budget": true,
+      "deadline": true,
+      "saved_claim": true,
+      "old_attempts_immutable": true,
+      "dependency_and_no_rebilling": true,
+      "one_plan_per_task": true
+    },
+    "invariants_passed": true,
+    "result": "024/result.json"
+  }
+}

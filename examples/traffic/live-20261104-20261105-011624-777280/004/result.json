@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "mode": "live_model",
+  "model": "deepseek-flash",
+  "request": {
+    "request_id": "activity-003",
+    "topic": "校园生活",
+    "budget": null,
+    "deadline": "2026-11-05T09:50+08:00",
+    "start_at": "2026-11-05T09:00+08:00"
+  },
+  "dataset_sha256": "7067271f8bfc83edfb9a5e1d9ba544ce3843261fb1a45ecf686e7cdfe550ea4a",
+  "status": "needs_info",
+  "stop_reason": "finished",
+  "error": null,
+  "uncompleted_reason": {
+    "status": "needs_info",
+    "missing_fields": [
+      "budget"
+    ],
+    "last_tool_error": null,
+    "constraint_gaps": [],
+    "model_error": null
+  },
+  "missing_fields": [
+    "budget"
+  ],
+  "selected_plan": null,
+  "task_plan": [
+    {
+      "tool": "search_assets",
+      "dependencies": [],
+      "status": "pending",
+      "step_id": null,
+      "result": null,
+      "attempt_count": 0,
+      "remaining_estimated_cost": null,
+      "remaining_estimated_minutes": null
+    },
+    {
+      "tool": "generate_script",
+      "dependencies": [
+        "search_assets"
+      ],
+      "status": "pending",
+      "step_id": null,
+      "result": null,
+      "attempt_count": 0,
+      "remaining_estimated_cost": null,
+      "remaining_estimated_minutes": null
+    },
+    {
+      "tool": "save_plan",
+      "dependencies": [
+        "generate_script"
+      ],
+      "status": "pending",
+      "step_id": null,
+      "result": null,
+      "attempt_count": 0,
+      "remaining_estimated_cost": null,
+      "remaining_estimated_minutes": null
+    }
+  ],
+  "actual_cost_total": 0,
+  "charged_this_invocation": 0,
+  "business_attempts_this_invocation": 0,
+  "elapsed_business_minutes": 0,
+  "business_clock": "2026-11-05T09:00+08:00",
+  "estimates": [],
+  "latest_estimate": null,
+  "attempts": [],
+  "saved_plan": null,
+  "plan_save_status": "not_saved",
+  "max_steps": 40,
+  "model_calls": 2,
+  "tool_calls": 2,
+  "protocol_rejections": 0,
+  "trace": [
+    {
+      "step": 1,
+      "run_id": "activity-003",
+      "action": {
+        "tool": "inspect_run",
+        "arguments": {},
+        "rationale": "Check request state; budget is null, which may require needs_info."
+      },
+      "observation": {
+        "ok": true,
+        "state": {
+          "attempts": [],
+          "effective_start": "2026-11-05T09:00+08:00",
+          "elapsed_minutes": 0,
+          "estimates": [],
+          "last_error": null,
+          "last_estimate": null,
+          "request": {
+            "budget": null,
+            "deadline": "2026-11-05T09:50+08:00",
+            "request_id": "activity-003",
+            "start_at": "2026-11-05T09:00+08:00",
+            "topic": "校园生活"
+          },
+          "revision": 0,
+          "saved_plan": null,
+          "spent": 0,
+          "steps": {}
+        },
+        "missing_fields": [
+          "budget"
+        ],
+        "plans": {
+          "premium": {
+            "name": "精细制作方案",
+            "steps": {
+              "search_assets": {
+                "cost": 4,
+                "minutes": 20
+              },
+              "generate_script": {
+                "cost": 7,
+                "minutes": 70
+              },
+              "save_plan": {
+                "cost": 1,
+                "minutes": 5
+              }
+            }
+          },
+          "lean": {
+            "name": "轻量制作方案",
+            "steps": {
+              "search_assets": {
+                "cost": 2,
+                "minutes": 10
+              },
+              "generate_script": {
+                "cost": 5,
+                "minutes": 25
+              },
+              "save_plan": {
+                "cost": 1,
+                "minutes": 5
+              }
+            }
+          }
+        },
+        "failure_fees": {
+          "search_assets": {
+            "cost": 1,
+            "minutes": 3
+          },
+          "generate_script": {
+            "cost": 1,
+            "minutes": 5
+          },
+          "save_plan": {
+            "cost": 0,
+            "minutes": 0
+          }
+        },
+        "boundary": "Costs and elapsed business minutes are simulated; API token charges and network latency are excluded."
+      },
+      "next_action": "finish"
+    },
+    {
+      "step": 2,
+      "run_id": "activity-003",
+      "action": {
+        "tool": "finish",
+        "arguments": {},
+        "rationale": "Request lacks a budget value, so no plan can be validated as feasible; need budget to proceed."
+      },
+      "observation": {
+        "ok": true,
+        "code": "FINISHED",
+        "status": "needs_info",
+        "reason": "Finish reflects persisted evidence; a feasible unfinished plan still needs execution."
+      },
+      "next_action": "stop"
+    }
+  ],
+  "published": false,
+  "boundary": "Simulated business costs/time and local tools. Mock is workflow-only; live mode uses real model decisions."
+}
