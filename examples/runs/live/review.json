@@ -1,0 +1,384 @@
+{
+  "mode": "live_model",
+  "model": "deepseek-flash",
+  "source_sha256": "603706ccb39768d768d287302067faeda7e8a66ac0784af2d052cfa15d1a57ad",
+  "reviewed_at": "2026-11-04T18:54:57.828962+08:00",
+  "reviewer": "Codex AI assistant inspected actual tool traces and database snapshots; not independent human sign-off",
+  "scenario_passed": 10,
+  "scenario_total": 13,
+  "all_accounting_and_state_invariants_passed": true,
+  "model_explanation_issues": [
+    {
+      "case": "deadline_replan",
+      "step": 8,
+      "issue": "Model rationale mentions 09:45 cutoff; actual input deadline is 09:50. Tools and final data use 09:50; finish 09:40 remains within the real simulated constraint."
+    }
+  ],
+  "boundary": "Single-run synthetic business scenarios; not statistical reliability, real billing, real production timing or script-quality proof.",
+  "cases": [
+    {
+      "case": "normal",
+      "scenario_checks_passed": true,
+      "status": "completed",
+      "cost_total": 12,
+      "cost_this_invocation": 12,
+      "model_calls": 8,
+      "protocol_rejections": 0,
+      "invariants": {
+        "live_model": true,
+        "exact_ledger_cost": true,
+        "exact_ledger_time": true,
+        "bounded_model_calls": true,
+        "no_publication": true,
+        "unique_attempt_ids": true,
+        "budget_hard_limit": true,
+        "simulated_deadline_hard_limit": true,
+        "dependency_and_no_double_charge": true,
+        "saved_claim_matches_database": true,
+        "saved_document_cost_matches_ledger": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "38a8c863290310c3637d92b6f688649eb1c291ea5861a19b42afbfbc8c416970",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "input.json": "fe42c2df9883a16bf04c11513647e46222895ffb84a8d63df4568cf11b3a8c48",
+        "result.json": "9180fe82344594834af4349fe916f91ee20f48e574fcc7589415d164c003a844"
+      }
+    },
+    {
+      "case": "missing_budget",
+      "scenario_checks_passed": true,
+      "status": "needs_info",
+      "cost_total": 0,
+      "cost_this_invocation": 0,
+      "model_calls": 2,
+      "protocol_rejections": 0,
+      "invariants": {
+        "live_model": true,
+        "exact_ledger_cost": true,
+        "exact_ledger_time": true,
+        "bounded_model_calls": true,
+        "no_publication": true,
+        "unique_attempt_ids": true,
+        "simulated_deadline_hard_limit": true,
+        "dependency_and_no_double_charge": true,
+        "no_false_saved_claim": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "6491851d48fc3b8bc093caac844a74a0c3a39b7fb5e16cbedaddcccaa048138d",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "input.json": "8d7181abd368caffb555f09670e88fdbeaee4a7db431f95fc07eb1e3f7673180",
+        "result.json": "63238471006681a0235258186559520f3eec796cf5236440fb919a4900322b9d"
+      }
+    },
+    {
+      "case": "missing_deadline",
+      "scenario_checks_passed": true,
+      "status": "needs_info",
+      "cost_total": 0,
+      "cost_this_invocation": 0,
+      "model_calls": 2,
+      "protocol_rejections": 0,
+      "invariants": {
+        "live_model": true,
+        "exact_ledger_cost": true,
+        "exact_ledger_time": true,
+        "bounded_model_calls": true,
+        "no_publication": true,
+        "unique_attempt_ids": true,
+        "budget_hard_limit": true,
+        "dependency_and_no_double_charge": true,
+        "no_false_saved_claim": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "6ce7eff4ca6e60b2641dd1543d6127433466ced3645efdacc69259371e978655",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "input.json": "2e03d64b2a54e8d49a6f73cc3671c4edadbd133f73d7380e7b0d56aa8f53fc5b",
+        "result.json": "a066feec04fb99748197c861983b3f0f40af83a617bf60780bce5e7458bff553"
+      }
+    },
+    {
+      "case": "budget_replan",
+      "scenario_checks_passed": true,
+      "status": "completed",
+      "cost_total": 8,
+      "cost_this_invocation": 8,
+      "model_calls": 9,
+      "protocol_rejections": 0,
+      "invariants": {
+        "live_model": true,
+        "exact_ledger_cost": true,
+        "exact_ledger_time": true,
+        "bounded_model_calls": true,
+        "no_publication": true,
+        "unique_attempt_ids": true,
+        "budget_hard_limit": true,
+        "simulated_deadline_hard_limit": true,
+        "dependency_and_no_double_charge": true,
+        "saved_claim_matches_database": true,
+        "saved_document_cost_matches_ledger": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "2ea62bf9c30ec28eb198ec6d6d21d7659442b139af0e9934d13c54792bd035f0",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "input.json": "68c2eb34de349ef1d8384ddcb0c2987751e6ff8f8d738d5ff263bfd50411d9ab",
+        "result.json": "5e2e3799d026f0ee91da434246877c3b4b435674532acc8853881f451a419406"
+      }
+    },
+    {
+      "case": "deadline_replan",
+      "scenario_checks_passed": true,
+      "status": "completed",
+      "cost_total": 8,
+      "cost_this_invocation": 8,
+      "model_calls": 9,
+      "protocol_rejections": 0,
+      "invariants": {
+        "live_model": true,
+        "exact_ledger_cost": true,
+        "exact_ledger_time": true,
+        "bounded_model_calls": true,
+        "no_publication": true,
+        "unique_attempt_ids": true,
+        "budget_hard_limit": true,
+        "simulated_deadline_hard_limit": true,
+        "dependency_and_no_double_charge": true,
+        "saved_claim_matches_database": true,
+        "saved_document_cost_matches_ledger": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "1837cc250df96c91c4e41e6f5731b7927e1382ca9c20771958bccd2467fe01af",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "input.json": "14dd8f2d97f543e06a1a0ccdd074dbd861b858f62361562ac8c8100de8d3ce78",
+        "result.json": "7987e27c659e333ef9dd85970db38e50dec49392587b6f96d27a551366d1a11a"
+      }
+    },
+    {
+      "case": "tool_failure_replan",
+      "scenario_checks_passed": true,
+      "status": "completed",
+      "cost_total": 11,
+      "cost_this_invocation": 11,
+      "model_calls": 10,
+      "protocol_rejections": 0,
+      "invariants": {
+        "live_model": true,
+        "exact_ledger_cost": true,
+        "exact_ledger_time": true,
+        "bounded_model_calls": true,
+        "no_publication": true,
+        "unique_attempt_ids": true,
+        "budget_hard_limit": true,
+        "simulated_deadline_hard_limit": true,
+        "dependency_and_no_double_charge": true,
+        "saved_claim_matches_database": true,
+        "saved_document_cost_matches_ledger": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "0892e58eabb17a5e6d28632113ee04781e213e83cbffcb4f0b7961a673f1c780",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "input.json": "ea63a5395e751388a2f9b48992fc5592abf042eb6342a141c96d9bbe884769ad",
+        "result.json": "d880bb5b069ac9ac72d52fdd0cb8d0a79ae848c7ad569d5abf0e4c1cc9ebf7d7"
+      }
+    },
+    {
+      "case": "persistent_failure",
+      "scenario_checks_passed": true,
+      "status": "tool_failed",
+      "cost_total": 6,
+      "cost_this_invocation": 6,
+      "model_calls": 8,
+      "protocol_rejections": 0,
+      "invariants": {
+        "live_model": true,
+        "exact_ledger_cost": true,
+        "exact_ledger_time": true,
+        "bounded_model_calls": true,
+        "no_publication": true,
+        "unique_attempt_ids": true,
+        "budget_hard_limit": true,
+        "simulated_deadline_hard_limit": true,
+        "dependency_and_no_double_charge": true,
+        "no_false_saved_claim": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "ddbbff68bd111e74f15207988d58edd8929516b0906147028498124f2ce078a4",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "input.json": "4b762afab7f6939984179e39e289e1e8494a4c4bcd6368513323c4d9d625ad4d",
+        "result.json": "caa0d70d3022beb6db41f95c8a1c730a495b62c3c255d7253d403cb45ada66d3"
+      }
+    },
+    {
+      "case": "no_feasible",
+      "scenario_checks_passed": true,
+      "status": "constraints_infeasible",
+      "cost_total": 0,
+      "cost_this_invocation": 0,
+      "model_calls": 3,
+      "protocol_rejections": 0,
+      "invariants": {
+        "live_model": true,
+        "exact_ledger_cost": true,
+        "exact_ledger_time": true,
+        "bounded_model_calls": true,
+        "no_publication": true,
+        "unique_attempt_ids": true,
+        "budget_hard_limit": true,
+        "simulated_deadline_hard_limit": true,
+        "dependency_and_no_double_charge": true,
+        "no_false_saved_claim": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "cc08367ef5d9b4daa97560f1b61ce5a8230256cfdb47d0d196d7856a1e2d6512",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "input.json": "0d9d21249b496d7b120b9f841cc60352b505c2a66446f9b9af31ce83e86228b0",
+        "result.json": "14e8c760f9e1f8d97b0f9a87a07705a6addfd212a2f90c700cd42663ac59d5df"
+      }
+    },
+    {
+      "case": "duplicate",
+      "scenario_checks_passed": true,
+      "status": "completed",
+      "cost_total": 12,
+      "cost_this_invocation": 0,
+      "model_calls": 2,
+      "protocol_rejections": 0,
+      "invariants": {
+        "live_model": true,
+        "exact_ledger_cost": true,
+        "exact_ledger_time": true,
+        "bounded_model_calls": true,
+        "no_publication": true,
+        "unique_attempt_ids": true,
+        "budget_hard_limit": true,
+        "simulated_deadline_hard_limit": true,
+        "dependency_and_no_double_charge": true,
+        "saved_claim_matches_database": true,
+        "saved_document_cost_matches_ledger": true,
+        "prior_attempts_retained_unchanged": true,
+        "successful_outputs_retained": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "60726d9a83412ed642c9c37e2108a19af552e7f733cb67709c0b0fc8ba526383",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "first_run.json": "81017b7ca303bd305459a4cd870105ed7961a959290746dfc661312349f9980c",
+        "input.json": "2f6c356c167d41e05f2097e78565d4d88bb17a6f5733cd414de32944412e0557",
+        "result.json": "c126d67cd0634b33f6329b40348a3d0af4992ae4fb5b06ba439874e2dcfabb7f"
+      }
+    },
+    {
+      "case": "resume",
+      "scenario_checks_passed": false,
+      "status": "completed",
+      "cost_total": 13,
+      "cost_this_invocation": 8,
+      "model_calls": 6,
+      "protocol_rejections": 0,
+      "invariants": {
+        "live_model": true,
+        "exact_ledger_cost": true,
+        "exact_ledger_time": true,
+        "bounded_model_calls": true,
+        "no_publication": true,
+        "unique_attempt_ids": true,
+        "budget_hard_limit": true,
+        "simulated_deadline_hard_limit": true,
+        "dependency_and_no_double_charge": true,
+        "saved_claim_matches_database": true,
+        "saved_document_cost_matches_ledger": true,
+        "prior_attempts_retained_unchanged": true,
+        "successful_outputs_retained": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "ff4faa0a72cd3a4331703424ab6a8dc3b0b64a59f65df58d9c3e195abb675ea8",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "first_run.json": "7871c53ac0783aa4bc640c1c82b04eee11e7fa54cb11f6a7ee01046d3dc4a1bb",
+        "input.json": "778bedb54e57f2a3eeede6a72e44f9ec53440e867e4956e90edcf711b341688d",
+        "result.json": "fc48d15c8ea47e7c9e8e489bb23db5aa69ddc5a1b266001b3d94e624896be01d"
+      }
+    },
+    {
+      "case": "save_failure_resume",
+      "scenario_checks_passed": false,
+      "status": "incomplete_model_error",
+      "cost_total": 0,
+      "cost_this_invocation": 0,
+      "model_calls": 2,
+      "protocol_rejections": 0,
+      "invariants": {
+        "live_model": true,
+        "exact_ledger_cost": true,
+        "exact_ledger_time": true,
+        "bounded_model_calls": true,
+        "no_publication": true,
+        "unique_attempt_ids": true,
+        "budget_hard_limit": true,
+        "simulated_deadline_hard_limit": true,
+        "dependency_and_no_double_charge": true,
+        "no_false_saved_claim": true,
+        "prior_attempts_retained_unchanged": true,
+        "successful_outputs_retained": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "11da9a85481464affdfca30a4ed0fefcadf382698be4664233238ff060412097",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "first_run.json": "35007c4be297264ee75233c874734f09d8b5c0da988e933da1d6f3fe4ae30bab",
+        "input.json": "7a49a2adb1c6b0a06308e770c2a13c89ce91395970f7b20755f8bddae7e9235a",
+        "result.json": "baf27f2a11ee9d9874f974f69c9495d63651f636d03915e12a4dc6468c1a3229"
+      }
+    },
+    {
+      "case": "no_assets",
+      "scenario_checks_passed": false,
+      "status": "incomplete_model_error",
+      "cost_total": 4,
+      "cost_this_invocation": 4,
+      "model_calls": 5,
+      "protocol_rejections": 0,
+      "invariants": {
+        "live_model": true,
+        "exact_ledger_cost": true,
+        "exact_ledger_time": true,
+        "bounded_model_calls": true,
+        "no_publication": true,
+        "unique_attempt_ids": true,
+        "budget_hard_limit": true,
+        "simulated_deadline_hard_limit": true,
+        "dependency_and_no_double_charge": true,
+        "no_false_saved_claim": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "b6694fb9118e92a9bb3dd13142774d77d79fa3656fad5c135d01e2ec74e2dc30",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "input.json": "49c98eb3ec79f09849e92e90627024b21c4ad526ac202520cf00dc20d1992e6f",
+        "result.json": "aac6dc4290422c33e776714fc37371fcf44f11e13230330efc777fc6ff3279db"
+      }
+    },
+    {
+      "case": "step_limit",
+      "scenario_checks_passed": true,
+      "status": "incomplete_step_limit",
+      "cost_total": 4,
+      "cost_this_invocation": 4,
+      "model_calls": 3,
+      "protocol_rejections": 0,
+      "invariants": {
+        "live_model": true,
+        "exact_ledger_cost": true,
+        "exact_ledger_time": true,
+        "bounded_model_calls": true,
+        "no_publication": true,
+        "unique_attempt_ids": true,
+        "budget_hard_limit": true,
+        "simulated_deadline_hard_limit": true,
+        "dependency_and_no_double_charge": true,
+        "no_false_saved_claim": true
+      },
+      "files_sha256": {
+        "database_snapshot.json": "eb4c9d504bfe129880a13dd7f238f8c97f3585fe504e38be7cee8a9013c57c87",
+        "dataset.json": "c9a92e63ac782b3f83dc108b0ce22018edc6a92e96c33b8ab43a13ffd7a29a3e",
+        "input.json": "c9913c5ad4bf5f083887b67b29457e500b0bf7e84b1dc862fcab78a834d8770b",
+        "result.json": "9e73d8253088f894755702a2ef88c4d7387a88270199c351125deafda58b856c"
+      }
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 
 项目仓库：[yangchong379/2-agent](https://github.com/yangchong379/2-agent)。这是独立项目；素材审核与排期项目位于另一个仓库。本项目的工具调用协议与本机密码输入复用了前一项目中已验证的通用适配逻辑，预算、任务状态与计费模块独立实现，不依赖另一目录。
 
-**当前已验证：34个自动化测试通过，13组离线场景通过。真实模型评估已由用户启动，结果待核查；不能把Mock当作模型效果证明。**
+**当前已验证：34个自动化测试通过，13/13组离线场景通过；DeepSeek真实模型首轮10/13组通过，3组遇到MODEL_TRANSPORT_FAILED，保留失败且暂未重跑。Mock仅验证流程，单次真实评估不构成稳定成功率。**
 
 ## 评审入口
 
@@ -16,6 +16,8 @@
 | AI辅助、个人贡献及复用范围 | [docs/04-ai-usage.md](docs/04-ai-usage.md) |
 | 难点、收获、实际用时与下一步 | [docs/05-retrospective.md](docs/05-retrospective.md) |
 | 离线实际结果 | [examples/runs/mock/REPORT.md](examples/runs/mock/REPORT.md) |
+| 真实模型原始报告（10/13） | [examples/runs/live/REPORT.md](examples/runs/live/REPORT.md) |
+| 真实Trace、账本与失败复核 | [examples/runs/live/REVIEW.md](examples/runs/live/REVIEW.md) |
 | 实际测试明细 | [examples/runs/mock/tests.txt](examples/runs/mock/tests.txt) |
 | 环境和源码摘要 | [examples/runs/mock/summary.json](examples/runs/mock/summary.json) |
 

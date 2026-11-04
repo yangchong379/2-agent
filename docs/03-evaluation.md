@@ -4,7 +4,7 @@
 
 Python 3.11.4、Windows本机实际执行：**34个自动化测试全部通过，13/13组离线场景通过**。原始结果、Trace和数据库/账本快照位于[examples/runs/mock](../examples/runs/mock/REPORT.md)。[summary.json](../examples/runs/mock/summary.json)记录环境、源码摘要和逐项断言，[tests.txt](../examples/runs/mock/tests.txt)记录测试明细。
 
-本页当前离线结果的模型为MockModel，业务工具与SQLite操作实际执行。用户已启动真实DeepSeek评估，真实结果待核查后另行补充；不把离线通过当作真实模型ReAct效果证明，也不预写真实成功日志。
+离线模型为MockModel，业务工具与SQLite操作实际执行。真实模型deepseek-flash首轮已完成，业务断言10/13通过，三组受到MODEL_TRANSPORT_FAILED影响；用户选择保留当前结果、稍后重跑。原始失败不改写，未将Mock通过当作真实模型证明。
 
 复核命令（选择新目录保留提交证据）：
 
@@ -42,6 +42,42 @@ python scripts/evaluate.py --output .runtime/recheck-1
 - 续跑：重新创建Store连接，读取已成功素材；生成和保存完成后累计费用12，没有再次检索。
 
 以上是对实际Mock Trace的摘要。真实模式中的选择由远端模型决定，可以有不同顺序；不能用这些摘要伪装成真实模型日志。
+
+## 首轮真实模型结果（已完成，暂不重跑）
+
+2026-11-04本机执行，模型deepseek-flash，真实API调用；运行耗时888.984秒（约14.82分钟）。[原始自动报告](../examples/runs/live/REPORT.md)、[原始summary](../examples/runs/live/summary.json)、[AI依据实际Trace及SQLite快照的复核](../examples/runs/live/REVIEW.md)和[逐项账本检查/文件SHA256](../examples/runs/live/review.json)均保留。
+
+真实与离线评估的可执行源码摘要一致：`603706ccb39768d768d287302067faeda7e8a66ac0784af2d052cfa15d1a57ad`。本次只补充证据与文档，没有为通过而改动运行逻辑。原始summary中的`real_model_decision_quality_verified: false`是评估器默认待审标记，未手工改成true；上述单独复核来自AI，不能视为独立人工签字。
+
+| 场景 | 真实实际结果 | 业务断言 | 输入 | 实际输出及Trace |
+|---|---|---|---|---|
+| 正常 | completed，费用12 | PASS | [input](../examples/runs/live/normal/input.json) | [result](../examples/runs/live/normal/result.json) |
+| 缺预算 | needs_info，费用0 | PASS | [input](../examples/runs/live/missing_budget/input.json) | [result](../examples/runs/live/missing_budget/result.json) |
+| 缺截止时间 | needs_info，费用0 | PASS | [input](../examples/runs/live/missing_deadline/input.json) | [result](../examples/runs/live/missing_deadline/result.json) |
+| 超预算重规划 | 先估12超10，再改lean并完成，费用8 | PASS | [input](../examples/runs/live/budget_replan/input.json) | [result](../examples/runs/live/budget_replan/result.json) |
+| 超截止时间重规划 | 先估95分钟超50，再改40分钟方案，费用8 | PASS | [input](../examples/runs/live/deadline_replan/input.json) | [result](../examples/runs/live/deadline_replan/result.json) |
+| 单次生成失败 | 保留素材后改lean，完成且总费用11 | PASS | [input](../examples/runs/live/tool_failure_replan/input.json) | [result](../examples/runs/live/tool_failure_replan/result.json) |
+| 持续生成失败 | tool_failed，保留素材和两次失败账本，费用6 | PASS | [input](../examples/runs/live/persistent_failure/input.json) | [result](../examples/runs/live/persistent_failure/result.json) |
+| 无可行方案 | constraints_infeasible，费用0 | PASS | [input](../examples/runs/live/no_feasible/input.json) | [result](../examples/runs/live/no_feasible/result.json) |
+| 重复执行 | 复用原方案，总费用12，本次0 | PASS | [input](../examples/runs/live/duplicate/input.json) | [首次](../examples/runs/live/duplicate/first_run.json)、[重复](../examples/runs/live/duplicate/result.json) |
+| 失败后续跑 | 首段网络中断；续跑复用素材并完成，总费用13 | FAIL（首段状态不符预期） | [input](../examples/runs/live/resume/input.json) | [首段](../examples/runs/live/resume/first_run.json)、[续跑](../examples/runs/live/resume/result.json) |
+| 保存失败后续跑 | 两段网络中断，尚未执行到保存，费用0 | FAIL | [input](../examples/runs/live/save_failure_resume/input.json) | [首段](../examples/runs/live/save_failure_resume/first_run.json)、[续跑](../examples/runs/live/save_failure_resume/result.json) |
+| 无资料 | 取得NO_ASSETS后网络中断，费用4，未保存 | FAIL | [input](../examples/runs/live/no_assets/input.json) | [result](../examples/runs/live/no_assets/result.json) |
+| 步数上限 | incomplete_step_limit，素材保留、费用4 | PASS | [input](../examples/runs/live/step_limit/input.json) | [result](../examples/runs/live/step_limit/result.json) |
+
+三项失败的具体边界：
+
+- resume首段检索成功花4、一次生成失败花1，之后模型传输失败，故首段是incomplete_model_error而不是预期tool_failed。第二段实际复用同一素材，premium脚本7和保存1，总费用13，仍在预算15内；仅“首段明确工具失败”的断言未通过，保留FAIL。
+- save_failure_resume的两段均在业务执行前网络中断，未测试到真实模型下的保存失败恢复。该能力当前只有离线和自动化证据，不能称为真实模型已通过。
+- no_assets已实际检索并得到NO_ASSETS，支付模拟费用4，模型下一轮传输失败，因此没有按预期正常结束为needs_materials；没有伪称保存成功。
+
+MODEL_TRANSPORT_FAILED只证明请求/响应传输未完成；脱敏记录无法进一步区分本机网络、代理、超时或服务端原因。当前不把失败一概归因于服务商，也不自动回退Mock或抹去已有费用。按用户选择，暂不启动新API调用；以后运行`py -3.11 scripts/connect_deepseek.py --retry-failed`将只重跑这三组，并创建新目录保留原始记录。
+
+实际动态决策至少有预算12→8和生成失败后保留素材、改剩余方案两条不同真实路径。无可行案例中模型根据inspect提供的价格表直接估算最便宜且最快的lean，仍有费用缺口5及时间缺口20分钟，因此结束；未强制逐一估算两档，这与离线固定策略不同。
+
+全部13组已产生的账本/状态均通过独立于场景状态的复核：费用与实际attempts一致，成功步骤无重复收费，依赖顺序成立，预算及模拟截止时间未越界，保存声明与plans表一致。此结论不等于13组业务场景全通过。
+
+解释文本也存在限制：deadline_replan第8步依据把截止时间误写为09:45，实际输入09:50，工具和保存数据仍用09:50，实际模拟完成09:40。原文未改写；约束判断依赖结构化输入和工具结果，不能只读模型解释。
 
 ## 费用与状态核对
 

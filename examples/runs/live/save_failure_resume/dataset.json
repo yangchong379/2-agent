@@ -1,0 +1,84 @@
+{
+  "description": "合成素材、模拟业务费用与耗时；费用不含模型API账单，耗时不含网络等待。",
+  "version": "synthetic-v1",
+  "plans": {
+    "premium": {
+      "name": "精细制作方案",
+      "steps": {
+        "search_assets": {
+          "cost": 4,
+          "minutes": 20
+        },
+        "generate_script": {
+          "cost": 7,
+          "minutes": 70
+        },
+        "save_plan": {
+          "cost": 1,
+          "minutes": 5
+        }
+      }
+    },
+    "lean": {
+      "name": "轻量制作方案",
+      "steps": {
+        "search_assets": {
+          "cost": 2,
+          "minutes": 10
+        },
+        "generate_script": {
+          "cost": 5,
+          "minutes": 25
+        },
+        "save_plan": {
+          "cost": 1,
+          "minutes": 5
+        }
+      }
+    }
+  },
+  "failure_fees": {
+    "search_assets": {
+      "cost": 1,
+      "minutes": 3
+    },
+    "generate_script": {
+      "cost": 1,
+      "minutes": 5
+    },
+    "save_plan": {
+      "cost": 0,
+      "minutes": 0
+    }
+  },
+  "materials": [
+    {
+      "id": "A01",
+      "topic": "夏日旅行",
+      "title": "原创海边旅行镜头",
+      "license": "synthetic-approved",
+      "tier": "premium"
+    },
+    {
+      "id": "A02",
+      "topic": "夏日旅行",
+      "title": "原创手机旅行镜头",
+      "license": "synthetic-approved",
+      "tier": "lean"
+    },
+    {
+      "id": "A03",
+      "topic": "校园生活",
+      "title": "原创校园日常镜头",
+      "license": "synthetic-approved",
+      "tier": "premium"
+    },
+    {
+      "id": "A04",
+      "topic": "校园生活",
+      "title": "原创校园手机镜头",
+      "license": "synthetic-approved",
+      "tier": "lean"
+    }
+  ]
+}

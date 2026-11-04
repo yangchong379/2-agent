@@ -1,0 +1,23 @@
+{
+  "state": {
+    "attempts": [],
+    "effective_start": "2026-11-05T09:00+08:00",
+    "elapsed_minutes": 0,
+    "estimates": [],
+    "last_error": null,
+    "last_estimate": null,
+    "request": {
+      "budget": 15,
+      "deadline": null,
+      "request_id": "missing_deadline",
+      "start_at": "2026-11-05T09:00+08:00",
+      "topic": "夏日旅行"
+    },
+    "revision": 0,
+    "saved_plan": null,
+    "spent": 0,
+    "steps": {}
+  },
+  "plans": [],
+  "ledger": []
+}

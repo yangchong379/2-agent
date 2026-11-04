@@ -4,7 +4,7 @@
 - GitHub：[yangchong379/2-agent](https://github.com/yangchong379/2-agent)。
 - 分支：main；最终完整commit SHA使用`git rev-parse HEAD`并与远端核对。
 - 运行与评审：[README](README.md)。
-- 当前证据：34个自动化测试、13组离线场景通过；真实模型评估已启动，核查结果另行更新。
+- 当前证据：34个自动化测试通过，13/13组离线场景通过；DeepSeek真实模型首轮10/13组通过，3组遇到MODEL_TRANSPORT_FAILED，保留失败且暂未重跑。Mock仅验证流程，单次真实评估不构成稳定成功率。
 
 至少正常、缺预算/截止时间、工具失败、预算超限、重复执行均有输入、实际输出和Trace；另覆盖跨进程失败续跑、保存失败后只补保存、无可行方案和步数上限。材料见[评估文档](docs/03-evaluation.md)。
 

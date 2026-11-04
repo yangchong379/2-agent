@@ -1,0 +1,61 @@
+{
+  "state": {
+    "attempts": [],
+    "effective_start": "2026-11-05T09:00+08:00",
+    "elapsed_minutes": 0,
+    "estimates": [
+      {
+        "base_plan_cost": 8,
+        "budget_gap": 5,
+        "deadline_gap_minutes": 20,
+        "feasible": false,
+        "ok": true,
+        "plan_id": "lean",
+        "projected_finish": "2026-11-05T09:40+08:00",
+        "projected_total_cost": 8,
+        "remaining_cost": 8,
+        "remaining_minutes": 40,
+        "remaining_steps": [
+          "search_assets",
+          "generate_script",
+          "save_plan"
+        ],
+        "revision": 0,
+        "spent_so_far": 0
+      }
+    ],
+    "last_error": null,
+    "last_estimate": {
+      "base_plan_cost": 8,
+      "budget_gap": 5,
+      "deadline_gap_minutes": 20,
+      "feasible": false,
+      "ok": true,
+      "plan_id": "lean",
+      "projected_finish": "2026-11-05T09:40+08:00",
+      "projected_total_cost": 8,
+      "remaining_cost": 8,
+      "remaining_minutes": 40,
+      "remaining_steps": [
+        "search_assets",
+        "generate_script",
+        "save_plan"
+      ],
+      "revision": 0,
+      "spent_so_far": 0
+    },
+    "request": {
+      "budget": 3,
+      "deadline": "2026-11-05T09:20+08:00",
+      "request_id": "no_feasible",
+      "start_at": "2026-11-05T09:00+08:00",
+      "topic": "夏日旅行"
+    },
+    "revision": 0,
+    "saved_plan": null,
+    "spent": 0,
+    "steps": {}
+  },
+  "plans": [],
+  "ledger": []
+}

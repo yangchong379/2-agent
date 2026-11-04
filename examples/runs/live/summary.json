@@ -1,0 +1,267 @@
+{
+  "mode": "live_model",
+  "generated_at_utc": "2026-11-04T10:32:55.373102+00:00",
+  "python": "3.11.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "source_sha256": "603706ccb39768d768d287302067faeda7e8a66ac0784af2d052cfa15d1a57ad",
+  "cases": [
+    {
+      "case": "normal",
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "actual_cost_total": 12,
+      "charged_this_invocation": 12,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true
+      },
+      "passed": true,
+      "result": "normal/result.json"
+    },
+    {
+      "case": "missing_budget",
+      "expected_status": "needs_info",
+      "actual_status": "needs_info",
+      "actual_cost_total": 0,
+      "charged_this_invocation": 0,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "simulated_time_within_deadline": true,
+        "no_execution_charge": true
+      },
+      "passed": true,
+      "result": "missing_budget/result.json"
+    },
+    {
+      "case": "missing_deadline",
+      "expected_status": "needs_info",
+      "actual_status": "needs_info",
+      "actual_cost_total": 0,
+      "charged_this_invocation": 0,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "no_execution_charge": true
+      },
+      "passed": true,
+      "result": "missing_deadline/result.json"
+    },
+    {
+      "case": "budget_replan",
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "actual_cost_total": 8,
+      "charged_this_invocation": 8,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true,
+        "observed_overbudget_then_feasible": true
+      },
+      "passed": true,
+      "result": "budget_replan/result.json"
+    },
+    {
+      "case": "deadline_replan",
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "actual_cost_total": 8,
+      "charged_this_invocation": 8,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true,
+        "observed_deadline_gap_then_feasible": true
+      },
+      "passed": true,
+      "result": "deadline_replan/result.json"
+    },
+    {
+      "case": "tool_failure_replan",
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "actual_cost_total": 11,
+      "charged_this_invocation": 11,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true,
+        "failed_attempt_visible": true,
+        "search_not_repeated": true
+      },
+      "passed": true,
+      "result": "tool_failure_replan/result.json"
+    },
+    {
+      "case": "persistent_failure",
+      "expected_status": "tool_failed",
+      "actual_status": "tool_failed",
+      "actual_cost_total": 6,
+      "charged_this_invocation": 6,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true
+      },
+      "passed": true,
+      "result": "persistent_failure/result.json"
+    },
+    {
+      "case": "no_feasible",
+      "expected_status": "constraints_infeasible",
+      "actual_status": "constraints_infeasible",
+      "actual_cost_total": 0,
+      "charged_this_invocation": 0,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true,
+        "no_execution_charge": true
+      },
+      "passed": true,
+      "result": "no_feasible/result.json"
+    },
+    {
+      "case": "duplicate",
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "actual_cost_total": 12,
+      "charged_this_invocation": 0,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true,
+        "successful_asset_retained": true,
+        "search_executed_once": true,
+        "same_plan_id": true,
+        "no_rebilling": true
+      },
+      "passed": true,
+      "result": "duplicate/result.json"
+    },
+    {
+      "case": "resume",
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "actual_cost_total": 13,
+      "charged_this_invocation": 8,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true,
+        "successful_asset_retained": true,
+        "search_executed_once": true,
+        "first_was_explicit_failure": false,
+        "resume_successful": true
+      },
+      "passed": false,
+      "result": "resume/result.json"
+    },
+    {
+      "case": "save_failure_resume",
+      "expected_status": "completed",
+      "actual_status": "incomplete_model_error",
+      "actual_cost_total": 0,
+      "charged_this_invocation": 0,
+      "checks": {
+        "expected_status": false,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true,
+        "successful_asset_retained": true,
+        "search_executed_once": false,
+        "first_was_explicit_failure": false,
+        "resume_successful": false,
+        "successful_script_retained": true,
+        "charged_only_save": false
+      },
+      "passed": false,
+      "result": "save_failure_resume/result.json"
+    },
+    {
+      "case": "no_assets",
+      "expected_status": "needs_materials",
+      "actual_status": "incomplete_model_error",
+      "actual_cost_total": 4,
+      "charged_this_invocation": 4,
+      "checks": {
+        "expected_status": false,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true
+      },
+      "passed": false,
+      "result": "no_assets/result.json"
+    },
+    {
+      "case": "step_limit",
+      "expected_status": "incomplete_step_limit",
+      "actual_status": "incomplete_step_limit",
+      "actual_cost_total": 4,
+      "charged_this_invocation": 4,
+      "checks": {
+        "expected_status": true,
+        "exact_ledger_sum": true,
+        "no_publication": true,
+        "bounded": true,
+        "no_false_saved_claim": true,
+        "actual_cost_within_budget": true,
+        "simulated_time_within_deadline": true
+      },
+      "passed": true,
+      "result": "step_limit/result.json"
+    }
+  ],
+  "boundary": "Simulated business tools, prices and durations; inspect actual live traces before claiming model decision quality.",
+  "real_model_decision_quality_verified": false,
+  "duration_seconds": 888.984,
+  "passed": 10,
+  "total": 13
+}
