@@ -1,0 +1,14 @@
+{
+  "sequence": 12,
+  "arrival_minute": 33,
+  "operator": "运营C",
+  "intent": "changed_same_id",
+  "request": {
+    "request_id": "activity-010",
+    "topic": "校园生活",
+    "budget": 21,
+    "start_at": "2026-11-05T09:00+08:00",
+    "deadline": "2026-11-05T09:50+08:00"
+  },
+  "service_fault": null
+}

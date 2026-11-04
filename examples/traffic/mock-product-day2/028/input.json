@@ -1,0 +1,14 @@
+{
+  "sequence": 28,
+  "arrival_minute": 81,
+  "operator": "运营A",
+  "intent": "new",
+  "request": {
+    "request_id": "activity-027",
+    "topic": "新品发布",
+    "budget": 0,
+    "start_at": "2026-11-05T09:00+08:00",
+    "deadline": "2026-11-05T09:50+08:00"
+  },
+  "service_fault": null
+}

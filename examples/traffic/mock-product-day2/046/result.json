@@ -1,0 +1,304 @@
+{
+  "schema_version": "1.0",
+  "mode": "offline_mock",
+  "model": "observation-driven-test-policy-v1",
+  "request": {
+    "request_id": "activity-031",
+    "topic": "夏日旅行",
+    "budget": 5,
+    "deadline": "2026-11-05T09:20+08:00",
+    "start_at": "2026-11-05T09:00+08:00"
+  },
+  "dataset_sha256": "7067271f8bfc83edfb9a5e1d9ba544ce3843261fb1a45ecf686e7cdfe550ea4a",
+  "status": "constraints_infeasible",
+  "stop_reason": "finished",
+  "error": null,
+  "uncompleted_reason": {
+    "status": "constraints_infeasible",
+    "missing_fields": [],
+    "last_tool_error": null,
+    "constraint_gaps": [
+      {
+        "plan_id": "premium",
+        "budget_gap": 7,
+        "deadline_gap_minutes": 75
+      },
+      {
+        "plan_id": "lean",
+        "budget_gap": 3,
+        "deadline_gap_minutes": 20
+      }
+    ],
+    "model_error": null
+  },
+  "missing_fields": [],
+  "selected_plan": "lean",
+  "task_plan": [
+    {
+      "tool": "search_assets",
+      "dependencies": [],
+      "status": "pending",
+      "step_id": null,
+      "result": null,
+      "attempt_count": 0,
+      "remaining_estimated_cost": 2,
+      "remaining_estimated_minutes": 10
+    },
+    {
+      "tool": "generate_script",
+      "dependencies": [
+        "search_assets"
+      ],
+      "status": "pending",
+      "step_id": null,
+      "result": null,
+      "attempt_count": 0,
+      "remaining_estimated_cost": 5,
+      "remaining_estimated_minutes": 25
+    },
+    {
+      "tool": "save_plan",
+      "dependencies": [
+        "generate_script"
+      ],
+      "status": "pending",
+      "step_id": null,
+      "result": null,
+      "attempt_count": 0,
+      "remaining_estimated_cost": 1,
+      "remaining_estimated_minutes": 5
+    }
+  ],
+  "actual_cost_total": 0,
+  "charged_this_invocation": 0,
+  "business_attempts_this_invocation": 0,
+  "elapsed_business_minutes": 0,
+  "business_clock": "2026-11-05T09:00+08:00",
+  "estimates": [
+    {
+      "base_plan_cost": 12,
+      "budget_gap": 7,
+      "deadline_gap_minutes": 75,
+      "feasible": false,
+      "ok": true,
+      "plan_id": "premium",
+      "projected_finish": "2026-11-05T10:35+08:00",
+      "projected_total_cost": 12,
+      "remaining_cost": 12,
+      "remaining_minutes": 95,
+      "remaining_steps": [
+        "search_assets",
+        "generate_script",
+        "save_plan"
+      ],
+      "revision": 0,
+      "spent_so_far": 0
+    },
+    {
+      "base_plan_cost": 8,
+      "budget_gap": 3,
+      "deadline_gap_minutes": 20,
+      "feasible": false,
+      "ok": true,
+      "plan_id": "lean",
+      "projected_finish": "2026-11-05T09:40+08:00",
+      "projected_total_cost": 8,
+      "remaining_cost": 8,
+      "remaining_minutes": 40,
+      "remaining_steps": [
+        "search_assets",
+        "generate_script",
+        "save_plan"
+      ],
+      "revision": 0,
+      "spent_so_far": 0
+    }
+  ],
+  "latest_estimate": {
+    "base_plan_cost": 8,
+    "budget_gap": 3,
+    "deadline_gap_minutes": 20,
+    "feasible": false,
+    "ok": true,
+    "plan_id": "lean",
+    "projected_finish": "2026-11-05T09:40+08:00",
+    "projected_total_cost": 8,
+    "remaining_cost": 8,
+    "remaining_minutes": 40,
+    "remaining_steps": [
+      "search_assets",
+      "generate_script",
+      "save_plan"
+    ],
+    "revision": 0,
+    "spent_so_far": 0
+  },
+  "attempts": [],
+  "saved_plan": null,
+  "plan_save_status": "not_saved",
+  "max_steps": 40,
+  "model_calls": 2,
+  "tool_calls": 2,
+  "protocol_rejections": 0,
+  "trace": [
+    {
+      "step": 1,
+      "run_id": "activity-031",
+      "action": {
+        "tool": "inspect_run",
+        "arguments": {},
+        "rationale": "读取持久化状态与工具费用，保留已有成功结果"
+      },
+      "observation": {
+        "ok": true,
+        "state": {
+          "attempts": [],
+          "effective_start": "2026-11-05T09:00+08:00",
+          "elapsed_minutes": 0,
+          "estimates": [
+            {
+              "base_plan_cost": 12,
+              "budget_gap": 7,
+              "deadline_gap_minutes": 75,
+              "feasible": false,
+              "ok": true,
+              "plan_id": "premium",
+              "projected_finish": "2026-11-05T10:35+08:00",
+              "projected_total_cost": 12,
+              "remaining_cost": 12,
+              "remaining_minutes": 95,
+              "remaining_steps": [
+                "search_assets",
+                "generate_script",
+                "save_plan"
+              ],
+              "revision": 0,
+              "spent_so_far": 0
+            },
+            {
+              "base_plan_cost": 8,
+              "budget_gap": 3,
+              "deadline_gap_minutes": 20,
+              "feasible": false,
+              "ok": true,
+              "plan_id": "lean",
+              "projected_finish": "2026-11-05T09:40+08:00",
+              "projected_total_cost": 8,
+              "remaining_cost": 8,
+              "remaining_minutes": 40,
+              "remaining_steps": [
+                "search_assets",
+                "generate_script",
+                "save_plan"
+              ],
+              "revision": 0,
+              "spent_so_far": 0
+            }
+          ],
+          "last_error": null,
+          "last_estimate": {
+            "base_plan_cost": 8,
+            "budget_gap": 3,
+            "deadline_gap_minutes": 20,
+            "feasible": false,
+            "ok": true,
+            "plan_id": "lean",
+            "projected_finish": "2026-11-05T09:40+08:00",
+            "projected_total_cost": 8,
+            "remaining_cost": 8,
+            "remaining_minutes": 40,
+            "remaining_steps": [
+              "search_assets",
+              "generate_script",
+              "save_plan"
+            ],
+            "revision": 0,
+            "spent_so_far": 0
+          },
+          "request": {
+            "budget": 5,
+            "deadline": "2026-11-05T09:20+08:00",
+            "request_id": "activity-031",
+            "start_at": "2026-11-05T09:00+08:00",
+            "topic": "夏日旅行"
+          },
+          "revision": 0,
+          "saved_plan": null,
+          "spent": 0,
+          "steps": {}
+        },
+        "missing_fields": [],
+        "plans": {
+          "premium": {
+            "name": "精细制作方案",
+            "steps": {
+              "search_assets": {
+                "cost": 4,
+                "minutes": 20
+              },
+              "generate_script": {
+                "cost": 7,
+                "minutes": 70
+              },
+              "save_plan": {
+                "cost": 1,
+                "minutes": 5
+              }
+            }
+          },
+          "lean": {
+            "name": "轻量制作方案",
+            "steps": {
+              "search_assets": {
+                "cost": 2,
+                "minutes": 10
+              },
+              "generate_script": {
+                "cost": 5,
+                "minutes": 25
+              },
+              "save_plan": {
+                "cost": 1,
+                "minutes": 5
+              }
+            }
+          }
+        },
+        "failure_fees": {
+          "search_assets": {
+            "cost": 1,
+            "minutes": 3
+          },
+          "generate_script": {
+            "cost": 1,
+            "minutes": 5
+          },
+          "save_plan": {
+            "cost": 0,
+            "minutes": 0
+          }
+        },
+        "boundary": "Costs and elapsed business minutes are simulated; API token charges and network latency are excluded."
+      },
+      "next_action": "finish"
+    },
+    {
+      "step": 2,
+      "run_id": "activity-031",
+      "action": {
+        "tool": "finish",
+        "arguments": {},
+        "rationale": "候选方案均无法满足预算或截止时间，明确列出缺口"
+      },
+      "observation": {
+        "ok": true,
+        "code": "FINISHED",
+        "status": "constraints_infeasible",
+        "reason": "Finish reflects persisted evidence; a feasible unfinished plan still needs execution."
+      },
+      "next_action": "stop"
+    }
+  ],
+  "published": false,
+  "boundary": "Simulated business costs/time and local tools. Mock is workflow-only; live mode uses real model decisions."
+}

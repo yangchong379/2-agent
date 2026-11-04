@@ -1,0 +1,25 @@
+{
+  "reviewer": "AI audit of actual outputs; not independent human review",
+  "mode": "offline_mock",
+  "days": [
+    {
+      "day": "mock-product-day1",
+      "requests": 48,
+      "goals_met": 9,
+      "invariants_passed": 48,
+      "unique_saved_objects": 7,
+      "final_ledger_cost": 73,
+      "failures": []
+    },
+    {
+      "day": "mock-product-day2",
+      "requests": 48,
+      "goals_met": 16,
+      "invariants_passed": 48,
+      "unique_saved_objects": 14,
+      "final_ledger_cost": 146,
+      "failures": []
+    }
+  ],
+  "boundary": "Serial synthetic replay, not actual production traffic or real model success-rate proof"
+}

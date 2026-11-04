@@ -1,0 +1,14 @@
+{
+  "sequence": 33,
+  "arrival_minute": 97,
+  "operator": "运营B",
+  "intent": "repeat",
+  "request": {
+    "request_id": "activity-013",
+    "topic": "校园生活",
+    "budget": null,
+    "start_at": "2026-11-05T09:00+08:00",
+    "deadline": "2026-11-05T09:40+08:00"
+  },
+  "service_fault": null
+}

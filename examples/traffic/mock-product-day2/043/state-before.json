@@ -1,0 +1,623 @@
+{
+  "runs": [
+    {
+      "id": "activity-000",
+      "fingerprint": "100b0e7c903a6c133ba488c8d9f4b571cb4c7ea165dbe47e212f4b18d7965981",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":7,\"deadline_gap_minutes\":55,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":3,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":3,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},\"request\":{\"budget\":5,\"deadline\":\"2026-11-05T09:40+08:00\",\"request_id\":\"activity-000\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"新品发布\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    },
+    {
+      "id": "activity-003",
+      "fingerprint": "1963577082bce058cbaf48dae2cd9e1a7f687b7dce36717c875b02c3bb368b61",
+      "state": "{\"attempts\":[{\"code\":\"SUCCEEDED\",\"cost\":2,\"id\":\"attempt-acd73280e8056ac189a6\",\"minutes\":10,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"search_assets\"},{\"code\":\"SUCCEEDED\",\"cost\":5,\"id\":\"attempt-4fbec3e14320daf39ca4\",\"minutes\":25,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"generate_script\"},{\"code\":\"SUCCEEDED\",\"cost\":1,\"id\":\"attempt-acfa05de3d2f5ea1bd54\",\"minutes\":5,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"save_plan\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":40,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":4,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":6,\"remaining_minutes\":30,\"remaining_steps\":[\"generate_script\",\"save_plan\"],\"revision\":1,\"spent_so_far\":2},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":7}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":7},\"request\":{\"budget\":8,\"deadline\":\"2026-11-05T10:35+08:00\",\"request_id\":\"activity-003\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":3,\"saved_plan\":{\"budget\":8,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T10:35+08:00\",\"finish_at\":\"2026-11-05T09:40+08:00\",\"id\":\"plan-a6a54e8077327941e366\",\"materials\":{\"materials\":[{\"id\":\"A04\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创校园手机镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A04\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":8,\"variant\":\"lean\"},\"spent\":8,\"steps\":{\"generate_script\":{\"attempt_count\":1,\"dependencies\":[\"search_assets\"],\"id\":\"step-d853c0c425f6aedafa32\",\"last_attempt_id\":\"attempt-4fbec3e14320daf39ca4\",\"output\":{\"asset_ids\":[\"A04\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"plan_id\":\"lean\",\"status\":\"succeeded\"},\"save_plan\":{\"attempt_count\":1,\"dependencies\":[\"generate_script\"],\"id\":\"step-e97caafaf394eaa87a47\",\"last_attempt_id\":\"attempt-acfa05de3d2f5ea1bd54\",\"output\":{\"plan_id\":\"plan-a6a54e8077327941e366\",\"saved\":true},\"plan_id\":\"lean\",\"status\":\"succeeded\"},\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-ce4465eb2c46897974c0\",\"last_attempt_id\":\"attempt-acd73280e8056ac189a6\",\"output\":{\"materials\":[{\"id\":\"A04\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创校园手机镜头\",\"topic\":\"校园生活\"}]},\"plan_id\":\"lean\",\"status\":\"succeeded\"}}}"
+    },
+    {
+      "id": "activity-004",
+      "fingerprint": "02ffa91de3c1bf7ee1c075a081a44f045d0407011214fbc6a0cfe914ad873980",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[],\"last_error\":null,\"last_estimate\":null,\"request\":{\"budget\":null,\"deadline\":\"2026-11-05T09:20+08:00\",\"request_id\":\"activity-004\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    },
+    {
+      "id": "activity-005",
+      "fingerprint": "ce2d50850f71c749de878f162ba77bb85874c1c7bb758d58172697f7c821898f",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":7,\"deadline_gap_minutes\":55,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":3,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":3,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},\"request\":{\"budget\":5,\"deadline\":\"2026-11-05T09:40+08:00\",\"request_id\":\"activity-005\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"新品发布\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    },
+    {
+      "id": "activity-006",
+      "fingerprint": "5103af8e3460a4c58712757f99ef6fd09bfbdb029a73a67592da7ab026b4b3f3",
+      "state": "{\"attempts\":[{\"code\":\"SUCCEEDED\",\"cost\":2,\"id\":\"attempt-31a97fc8edc865bdfa40\",\"minutes\":10,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"search_assets\"},{\"code\":\"SUCCEEDED\",\"cost\":5,\"id\":\"attempt-e0b4eb76d882577b14dc\",\"minutes\":25,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"generate_script\"},{\"code\":\"SUCCEEDED\",\"cost\":1,\"id\":\"attempt-82331c4006c7971ca532\",\"minutes\":5,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"save_plan\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":40,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":55,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":6,\"remaining_minutes\":30,\"remaining_steps\":[\"generate_script\",\"save_plan\"],\"revision\":1,\"spent_so_far\":2},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":7}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":7},\"request\":{\"budget\":20,\"deadline\":\"2026-11-05T09:40+08:00\",\"request_id\":\"activity-006\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":3,\"saved_plan\":{\"budget\":20,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T09:40+08:00\",\"finish_at\":\"2026-11-05T09:40+08:00\",\"id\":\"plan-3ea1d8b94f4d9c361cb2\",\"materials\":{\"materials\":[{\"id\":\"A04\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创校园手机镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A04\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":8,\"variant\":\"lean\"},\"spent\":8,\"steps\":{\"generate_script\":{\"attempt_count\":1,\"dependencies\":[\"search_assets\"],\"id\":\"step-97dc902fe324aa0d4d83\",\"last_attempt_id\":\"attempt-e0b4eb76d882577b14dc\",\"output\":{\"asset_ids\":[\"A04\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"plan_id\":\"lean\",\"status\":\"succeeded\"},\"save_plan\":{\"attempt_count\":1,\"dependencies\":[\"generate_script\"],\"id\":\"step-d97bdb60b33887eff61f\",\"last_attempt_id\":\"attempt-82331c4006c7971ca532\",\"output\":{\"plan_id\":\"plan-3ea1d8b94f4d9c361cb2\",\"saved\":true},\"plan_id\":\"lean\",\"status\":\"succeeded\"},\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-cc7bfc13844f5c2f3a45\",\"last_attempt_id\":\"attempt-31a97fc8edc865bdfa40\",\"output\":{\"materials\":[{\"id\":\"A04\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创校园手机镜头\",\"topic\":\"校园生活\"}]},\"plan_id\":\"lean\",\"status\":\"succeeded\"}}}"
+    },
+    {
+      "id": "activity-007",
+      "fingerprint": "b5011bcb797b3465d363a887cda344d116abcb4a60db148b3208931d5dd25545",
+      "state": "{\"attempts\":[{\"code\":\"SUCCEEDED\",\"cost\":4,\"id\":\"attempt-0d9128290e8097acae51\",\"minutes\":20,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"search_assets\"},{\"code\":\"SUCCEEDED\",\"cost\":7,\"id\":\"attempt-5b44834afa5d54ba0de7\",\"minutes\":70,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"generate_script\"},{\"code\":\"SUCCEEDED\",\"cost\":1,\"id\":\"attempt-dc21bda8db34b47bbeda\",\"minutes\":5,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"save_plan\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":95,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":8,\"remaining_minutes\":75,\"remaining_steps\":[\"generate_script\",\"save_plan\"],\"revision\":1,\"spent_so_far\":4},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11},\"request\":{\"budget\":12,\"deadline\":\"2026-11-05T11:30+08:00\",\"request_id\":\"activity-007\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":3,\"saved_plan\":{\"budget\":12,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T11:30+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-1284ae33ccb85200b4b7\",\"materials\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":12,\"variant\":\"premium\"},\"spent\":12,\"steps\":{\"generate_script\":{\"attempt_count\":1,\"dependencies\":[\"search_assets\"],\"id\":\"step-099ac4d4f62bc2968b62\",\"last_attempt_id\":\"attempt-5b44834afa5d54ba0de7\",\"output\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"save_plan\":{\"attempt_count\":1,\"dependencies\":[\"generate_script\"],\"id\":\"step-e4c8fa154fcc843ac6b7\",\"last_attempt_id\":\"attempt-dc21bda8db34b47bbeda\",\"output\":{\"plan_id\":\"plan-1284ae33ccb85200b4b7\",\"saved\":true},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-550b8b3e58ebd89e5604\",\"last_attempt_id\":\"attempt-0d9128290e8097acae51\",\"output\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"plan_id\":\"premium\",\"status\":\"succeeded\"}}}"
+    },
+    {
+      "id": "activity-009",
+      "fingerprint": "0f8d658aaf67340b570e180bcbea624f898c72dc5bb5195b12c1e0569aacb592",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":2,\"deadline_gap_minutes\":75,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":20,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":20,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},\"request\":{\"budget\":10,\"deadline\":\"2026-11-05T09:20+08:00\",\"request_id\":\"activity-009\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"夏日旅行\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    },
+    {
+      "id": "activity-011",
+      "fingerprint": "01800e94bf94804be66d910377df0a7c12071268071460d859b013b900417880",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":75,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":20,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":20,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},\"request\":{\"budget\":15,\"deadline\":\"2026-11-05T09:20+08:00\",\"request_id\":\"activity-011\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"夏日旅行\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    },
+    {
+      "id": "activity-012",
+      "fingerprint": "068b2588cf075b05473ff25b7a03c8792483305c9864c5b926f4a5c7e9aee9b7",
+      "state": "{\"attempts\":[{\"code\":\"NO_ASSETS\",\"cost\":2,\"id\":\"attempt-e07d041b1e1e8958a19b\",\"minutes\":10,\"plan_id\":\"lean\",\"status\":\"failed\",\"tool\":\"search_assets\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":10,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":55,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0}],\"last_error\":{\"code\":\"NO_ASSETS\",\"tool\":\"search_assets\"},\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},\"request\":{\"budget\":20,\"deadline\":\"2026-11-05T09:40+08:00\",\"request_id\":\"activity-012\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"新品发布\"},\"revision\":1,\"saved_plan\":null,\"spent\":2,\"steps\":{\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-1b149b1631497f0df646\",\"last_attempt_id\":\"attempt-e07d041b1e1e8958a19b\",\"output\":null,\"plan_id\":\"lean\",\"status\":\"failed\"}}}"
+    },
+    {
+      "id": "activity-013",
+      "fingerprint": "f15e4bc7c2851956d3024d08e1311b4599c45a28c19224064fd152109693daa9",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[],\"last_error\":null,\"last_estimate\":null,\"request\":{\"budget\":null,\"deadline\":\"2026-11-05T09:40+08:00\",\"request_id\":\"activity-013\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    },
+    {
+      "id": "activity-014",
+      "fingerprint": "3321d1675f5ab93bdcaf5c924362a38f3b5f902d0612051a0f14cd0465cfdd8b",
+      "state": "{\"attempts\":[{\"code\":\"SUCCEEDED\",\"cost\":2,\"id\":\"attempt-2390d300f2d4311f5817\",\"minutes\":10,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"search_assets\"},{\"code\":\"SUCCEEDED\",\"cost\":5,\"id\":\"attempt-41d851fd7fc22586f1f6\",\"minutes\":25,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"generate_script\"},{\"code\":\"SUCCEEDED\",\"cost\":1,\"id\":\"attempt-7feddaa63bd7dd1e4e6e\",\"minutes\":5,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"save_plan\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":40,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":2,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":6,\"remaining_minutes\":30,\"remaining_steps\":[\"generate_script\",\"save_plan\"],\"revision\":1,\"spent_so_far\":2},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":7}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":7},\"request\":{\"budget\":10,\"deadline\":\"2026-11-05T10:35+08:00\",\"request_id\":\"activity-014\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"夏日旅行\"},\"revision\":3,\"saved_plan\":{\"budget\":10,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T10:35+08:00\",\"finish_at\":\"2026-11-05T09:40+08:00\",\"id\":\"plan-a110ab34729d28d4a10d\",\"materials\":{\"materials\":[{\"id\":\"A02\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创手机旅行镜头\",\"topic\":\"夏日旅行\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A02\"],\"script\":\"围绕夏日旅行：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"夏日旅行内容活动\"},\"topic\":\"夏日旅行\",\"total_cost\":8,\"variant\":\"lean\"},\"spent\":8,\"steps\":{\"generate_script\":{\"attempt_count\":1,\"dependencies\":[\"search_assets\"],\"id\":\"step-6f148dc3f1bd52a38849\",\"last_attempt_id\":\"attempt-41d851fd7fc22586f1f6\",\"output\":{\"asset_ids\":[\"A02\"],\"script\":\"围绕夏日旅行：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"夏日旅行内容活动\"},\"plan_id\":\"lean\",\"status\":\"succeeded\"},\"save_plan\":{\"attempt_count\":1,\"dependencies\":[\"generate_script\"],\"id\":\"step-c8f4c604ddccf8740535\",\"last_attempt_id\":\"attempt-7feddaa63bd7dd1e4e6e\",\"output\":{\"plan_id\":\"plan-a110ab34729d28d4a10d\",\"saved\":true},\"plan_id\":\"lean\",\"status\":\"succeeded\"},\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-8eb143d80126bac09f18\",\"last_attempt_id\":\"attempt-2390d300f2d4311f5817\",\"output\":{\"materials\":[{\"id\":\"A02\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创手机旅行镜头\",\"topic\":\"夏日旅行\"}]},\"plan_id\":\"lean\",\"status\":\"succeeded\"}}}"
+    },
+    {
+      "id": "activity-015",
+      "fingerprint": "af7b342dec25aeb122d31304e81d8ae46abb8954b87df8fb997d040a1995b4ea",
+      "state": "{\"attempts\":[{\"code\":\"SUCCEEDED\",\"cost\":4,\"id\":\"attempt-0efd4db525ecd1d4944b\",\"minutes\":20,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"search_assets\"},{\"code\":\"SUCCEEDED\",\"cost\":7,\"id\":\"attempt-9671fdb346159fdc7e1d\",\"minutes\":70,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"generate_script\"},{\"code\":\"SUCCEEDED\",\"cost\":1,\"id\":\"attempt-288869204beab09e75ee\",\"minutes\":5,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"save_plan\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":95,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":8,\"remaining_minutes\":75,\"remaining_steps\":[\"generate_script\",\"save_plan\"],\"revision\":1,\"spent_so_far\":4},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11},\"request\":{\"budget\":12,\"deadline\":\"2026-11-05T10:35+08:00\",\"request_id\":\"activity-015\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":3,\"saved_plan\":{\"budget\":12,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T10:35+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-8daeb2c3971ff6fdeb27\",\"materials\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":12,\"variant\":\"premium\"},\"spent\":12,\"steps\":{\"generate_script\":{\"attempt_count\":1,\"dependencies\":[\"search_assets\"],\"id\":\"step-621ef74545068749dd30\",\"last_attempt_id\":\"attempt-9671fdb346159fdc7e1d\",\"output\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"save_plan\":{\"attempt_count\":1,\"dependencies\":[\"generate_script\"],\"id\":\"step-cc608a6cefcc3680a1a0\",\"last_attempt_id\":\"attempt-288869204beab09e75ee\",\"output\":{\"plan_id\":\"plan-8daeb2c3971ff6fdeb27\",\"saved\":true},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-98d7510e4d6164b0471a\",\"last_attempt_id\":\"attempt-0efd4db525ecd1d4944b\",\"output\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"plan_id\":\"premium\",\"status\":\"succeeded\"}}}"
+    },
+    {
+      "id": "activity-016",
+      "fingerprint": "4189293fbd95ebb9e6b895dea20f18f7f1e327584c26bb6dfdeb50fc41dd654c",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":75,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":20,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":20,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},\"request\":{\"budget\":15,\"deadline\":\"2026-11-05T09:20+08:00\",\"request_id\":\"activity-016\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    },
+    {
+      "id": "activity-017",
+      "fingerprint": "27b09e5489a05449a29da238c6249c2c61fe0cc9fc6faaf3cacde64885ff0f46",
+      "state": "{\"attempts\":[{\"code\":\"SUCCEEDED\",\"cost\":2,\"id\":\"attempt-7232c8a51526798648ba\",\"minutes\":10,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"search_assets\"},{\"code\":\"SUCCEEDED\",\"cost\":5,\"id\":\"attempt-d3039d5f021202566b9e\",\"minutes\":25,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"generate_script\"},{\"code\":\"SUCCEEDED\",\"cost\":1,\"id\":\"attempt-a720c803b91f1d0ef0a4\",\"minutes\":5,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"save_plan\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":40,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":2,\"deadline_gap_minutes\":45,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":6,\"remaining_minutes\":30,\"remaining_steps\":[\"generate_script\",\"save_plan\"],\"revision\":1,\"spent_so_far\":2},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":7}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":7},\"request\":{\"budget\":10,\"deadline\":\"2026-11-05T09:50+08:00\",\"request_id\":\"activity-017\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":3,\"saved_plan\":{\"budget\":10,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T09:50+08:00\",\"finish_at\":\"2026-11-05T09:40+08:00\",\"id\":\"plan-2e95be2d56a783be59e4\",\"materials\":{\"materials\":[{\"id\":\"A04\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创校园手机镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A04\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":8,\"variant\":\"lean\"},\"spent\":8,\"steps\":{\"generate_script\":{\"attempt_count\":1,\"dependencies\":[\"search_assets\"],\"id\":\"step-7b84bd64e55ff42d2ab9\",\"last_attempt_id\":\"attempt-d3039d5f021202566b9e\",\"output\":{\"asset_ids\":[\"A04\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"plan_id\":\"lean\",\"status\":\"succeeded\"},\"save_plan\":{\"attempt_count\":1,\"dependencies\":[\"generate_script\"],\"id\":\"step-4c625b4a9f2ed213215e\",\"last_attempt_id\":\"attempt-a720c803b91f1d0ef0a4\",\"output\":{\"plan_id\":\"plan-2e95be2d56a783be59e4\",\"saved\":true},\"plan_id\":\"lean\",\"status\":\"succeeded\"},\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-434ec36d359c4064b9ef\",\"last_attempt_id\":\"attempt-7232c8a51526798648ba\",\"output\":{\"materials\":[{\"id\":\"A04\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创校园手机镜头\",\"topic\":\"校园生活\"}]},\"plan_id\":\"lean\",\"status\":\"succeeded\"}}}"
+    },
+    {
+      "id": "activity-018",
+      "fingerprint": "454983852021e9ac841eba4eb56aa19dfc9397a46035cc970e5d1c3889723293",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":2,\"deadline_gap_minutes\":75,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":20,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":20,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},\"request\":{\"budget\":10,\"deadline\":\"2026-11-05T09:20+08:00\",\"request_id\":\"activity-018\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    },
+    {
+      "id": "activity-019",
+      "fingerprint": "7f5f662473774c1cda4543f8c5c840c23a2214040b1d18b0be781cc01f81beb8",
+      "state": "{\"attempts\":[{\"code\":\"SUCCEEDED\",\"cost\":2,\"id\":\"attempt-e4785fd190a82a3516dd\",\"minutes\":10,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"search_assets\"},{\"code\":\"SUCCEEDED\",\"cost\":5,\"id\":\"attempt-73774c0098b557c57db8\",\"minutes\":25,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"generate_script\"},{\"code\":\"SUCCEEDED\",\"cost\":1,\"id\":\"attempt-707b07813fc7bcbdae49\",\"minutes\":5,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"save_plan\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":40,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":45,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":6,\"remaining_minutes\":30,\"remaining_steps\":[\"generate_script\",\"save_plan\"],\"revision\":1,\"spent_so_far\":2},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":7}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":7},\"request\":{\"budget\":12,\"deadline\":\"2026-11-05T09:50+08:00\",\"request_id\":\"activity-019\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"夏日旅行\"},\"revision\":3,\"saved_plan\":{\"budget\":12,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T09:50+08:00\",\"finish_at\":\"2026-11-05T09:40+08:00\",\"id\":\"plan-f2cde3f64ee214bac74f\",\"materials\":{\"materials\":[{\"id\":\"A02\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创手机旅行镜头\",\"topic\":\"夏日旅行\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A02\"],\"script\":\"围绕夏日旅行：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"夏日旅行内容活动\"},\"topic\":\"夏日旅行\",\"total_cost\":8,\"variant\":\"lean\"},\"spent\":8,\"steps\":{\"generate_script\":{\"attempt_count\":1,\"dependencies\":[\"search_assets\"],\"id\":\"step-40963e93c88f3aea561b\",\"last_attempt_id\":\"attempt-73774c0098b557c57db8\",\"output\":{\"asset_ids\":[\"A02\"],\"script\":\"围绕夏日旅行：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"夏日旅行内容活动\"},\"plan_id\":\"lean\",\"status\":\"succeeded\"},\"save_plan\":{\"attempt_count\":1,\"dependencies\":[\"generate_script\"],\"id\":\"step-ba619de657d25acbd0ca\",\"last_attempt_id\":\"attempt-707b07813fc7bcbdae49\",\"output\":{\"plan_id\":\"plan-f2cde3f64ee214bac74f\",\"saved\":true},\"plan_id\":\"lean\",\"status\":\"succeeded\"},\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-432a972786b609f0e125\",\"last_attempt_id\":\"attempt-e4785fd190a82a3516dd\",\"output\":{\"materials\":[{\"id\":\"A02\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创手机旅行镜头\",\"topic\":\"夏日旅行\"}]},\"plan_id\":\"lean\",\"status\":\"succeeded\"}}}"
+    },
+    {
+      "id": "activity-020",
+      "fingerprint": "7e36752218081bfaa51ee96224ccb6ef892fd57d56c8a0e758aaf251a478d267",
+      "state": "{\"attempts\":[{\"code\":\"SUCCEEDED\",\"cost\":4,\"id\":\"attempt-8800644963b63991ae03\",\"minutes\":20,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"search_assets\"},{\"code\":\"SUCCEEDED\",\"cost\":7,\"id\":\"attempt-e9db8093420b79fccb66\",\"minutes\":70,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"generate_script\"},{\"code\":\"SUCCEEDED\",\"cost\":1,\"id\":\"attempt-f24cdc132a5a84c03a58\",\"minutes\":5,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"save_plan\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":95,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":8,\"remaining_minutes\":75,\"remaining_steps\":[\"generate_script\",\"save_plan\"],\"revision\":1,\"spent_so_far\":4},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11},\"request\":{\"budget\":12,\"deadline\":\"2026-11-05T11:30+08:00\",\"request_id\":\"activity-020\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"夏日旅行\"},\"revision\":3,\"saved_plan\":{\"budget\":12,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T11:30+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-8cebd042e0e3e71b1b64\",\"materials\":{\"materials\":[{\"id\":\"A01\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创海边旅行镜头\",\"topic\":\"夏日旅行\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A01\"],\"script\":\"围绕夏日旅行：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"夏日旅行内容活动\"},\"topic\":\"夏日旅行\",\"total_cost\":12,\"variant\":\"premium\"},\"spent\":12,\"steps\":{\"generate_script\":{\"attempt_count\":1,\"dependencies\":[\"search_assets\"],\"id\":\"step-409a03b5956a188e3042\",\"last_attempt_id\":\"attempt-e9db8093420b79fccb66\",\"output\":{\"asset_ids\":[\"A01\"],\"script\":\"围绕夏日旅行：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"夏日旅行内容活动\"},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"save_plan\":{\"attempt_count\":1,\"dependencies\":[\"generate_script\"],\"id\":\"step-074d4469a4792b084bf8\",\"last_attempt_id\":\"attempt-f24cdc132a5a84c03a58\",\"output\":{\"plan_id\":\"plan-8cebd042e0e3e71b1b64\",\"saved\":true},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-21effd885f9e9fb756bf\",\"last_attempt_id\":\"attempt-8800644963b63991ae03\",\"output\":{\"materials\":[{\"id\":\"A01\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创海边旅行镜头\",\"topic\":\"夏日旅行\"}]},\"plan_id\":\"premium\",\"status\":\"succeeded\"}}}"
+    },
+    {
+      "id": "activity-021",
+      "fingerprint": "b0f4aba2130b105c80af6d30b2547b2240091dd00e060c73b63449c24552a69f",
+      "state": "{\"attempts\":[{\"code\":\"SUCCEEDED\",\"cost\":4,\"id\":\"attempt-8823dbb8c63440654aab\",\"minutes\":20,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"search_assets\"},{\"code\":\"SUCCEEDED\",\"cost\":7,\"id\":\"attempt-c0221c7b377c2c5581e0\",\"minutes\":70,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"generate_script\"},{\"code\":\"SUCCEEDED\",\"cost\":1,\"id\":\"attempt-06a9de5e1e27e047f19d\",\"minutes\":5,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"save_plan\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":95,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":8,\"remaining_minutes\":75,\"remaining_steps\":[\"generate_script\",\"save_plan\"],\"revision\":1,\"spent_so_far\":4},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11},\"request\":{\"budget\":20,\"deadline\":\"2026-11-05T10:35+08:00\",\"request_id\":\"activity-021\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":3,\"saved_plan\":{\"budget\":20,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T10:35+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-ae540377f3cfbb33d72f\",\"materials\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":12,\"variant\":\"premium\"},\"spent\":12,\"steps\":{\"generate_script\":{\"attempt_count\":1,\"dependencies\":[\"search_assets\"],\"id\":\"step-1e742a6fd7d267276c30\",\"last_attempt_id\":\"attempt-c0221c7b377c2c5581e0\",\"output\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"save_plan\":{\"attempt_count\":1,\"dependencies\":[\"generate_script\"],\"id\":\"step-6668379cc9954b357d0c\",\"last_attempt_id\":\"attempt-06a9de5e1e27e047f19d\",\"output\":{\"plan_id\":\"plan-ae540377f3cfbb33d72f\",\"saved\":true},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-26c3616523452d2af6f8\",\"last_attempt_id\":\"attempt-8823dbb8c63440654aab\",\"output\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"plan_id\":\"premium\",\"status\":\"succeeded\"}}}"
+    },
+    {
+      "id": "activity-023",
+      "fingerprint": "b2d1bb3bbde19553813a8da5c34fd9c5ac6b24001a7face8ab18095de54e71e4",
+      "state": "{\"attempts\":[{\"code\":\"SUCCEEDED\",\"cost\":4,\"id\":\"attempt-9e4de0e5cca86d05343b\",\"minutes\":20,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"search_assets\"},{\"code\":\"SUCCEEDED\",\"cost\":7,\"id\":\"attempt-ce22e14c0d281b3f8fb6\",\"minutes\":70,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"generate_script\"},{\"code\":\"SUCCEEDED\",\"cost\":1,\"id\":\"attempt-43faad74e05fb0ef3a19\",\"minutes\":5,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"save_plan\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":95,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":8,\"remaining_minutes\":75,\"remaining_steps\":[\"generate_script\",\"save_plan\"],\"revision\":1,\"spent_so_far\":4},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11},\"request\":{\"budget\":12,\"deadline\":\"2026-11-05T10:35+08:00\",\"request_id\":\"activity-023\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"夏日旅行\"},\"revision\":3,\"saved_plan\":{\"budget\":12,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T10:35+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-3d574c5b208e20be48ce\",\"materials\":{\"materials\":[{\"id\":\"A01\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创海边旅行镜头\",\"topic\":\"夏日旅行\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A01\"],\"script\":\"围绕夏日旅行：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"夏日旅行内容活动\"},\"topic\":\"夏日旅行\",\"total_cost\":12,\"variant\":\"premium\"},\"spent\":12,\"steps\":{\"generate_script\":{\"attempt_count\":1,\"dependencies\":[\"search_assets\"],\"id\":\"step-b6a463e4ca3f6eee1fc1\",\"last_attempt_id\":\"attempt-ce22e14c0d281b3f8fb6\",\"output\":{\"asset_ids\":[\"A01\"],\"script\":\"围绕夏日旅行：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"夏日旅行内容活动\"},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"save_plan\":{\"attempt_count\":1,\"dependencies\":[\"generate_script\"],\"id\":\"step-cd2fc8d334179839d003\",\"last_attempt_id\":\"attempt-43faad74e05fb0ef3a19\",\"output\":{\"plan_id\":\"plan-3d574c5b208e20be48ce\",\"saved\":true},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-4567b23ac8528dcc07a6\",\"last_attempt_id\":\"attempt-9e4de0e5cca86d05343b\",\"output\":{\"materials\":[{\"id\":\"A01\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创海边旅行镜头\",\"topic\":\"夏日旅行\"}]},\"plan_id\":\"premium\",\"status\":\"succeeded\"}}}"
+    },
+    {
+      "id": "activity-025",
+      "fingerprint": "95bf2ed5f8f52451b8c264dd193f313ffff7982507bb6daaac8610a9c5705ad3",
+      "state": "{\"attempts\":[{\"code\":\"SUCCEEDED\",\"cost\":2,\"id\":\"attempt-29c6743d844a13cc76e6\",\"minutes\":10,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"search_assets\"},{\"code\":\"SUCCEEDED\",\"cost\":5,\"id\":\"attempt-adea0b0dafd67667ba0d\",\"minutes\":25,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"generate_script\"},{\"code\":\"SUCCEEDED\",\"cost\":1,\"id\":\"attempt-20440b1079dfd27fc3bc\",\"minutes\":5,\"plan_id\":\"lean\",\"status\":\"succeeded\",\"tool\":\"save_plan\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":40,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":2,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":6,\"remaining_minutes\":30,\"remaining_steps\":[\"generate_script\",\"save_plan\"],\"revision\":1,\"spent_so_far\":2},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":7}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":7},\"request\":{\"budget\":10,\"deadline\":\"2026-11-05T11:30+08:00\",\"request_id\":\"activity-025\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":3,\"saved_plan\":{\"budget\":10,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T11:30+08:00\",\"finish_at\":\"2026-11-05T09:40+08:00\",\"id\":\"plan-f428a9999f581e8326a6\",\"materials\":{\"materials\":[{\"id\":\"A04\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创校园手机镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A04\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":8,\"variant\":\"lean\"},\"spent\":8,\"steps\":{\"generate_script\":{\"attempt_count\":1,\"dependencies\":[\"search_assets\"],\"id\":\"step-b204a6048d1d92cdc3cd\",\"last_attempt_id\":\"attempt-adea0b0dafd67667ba0d\",\"output\":{\"asset_ids\":[\"A04\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"plan_id\":\"lean\",\"status\":\"succeeded\"},\"save_plan\":{\"attempt_count\":1,\"dependencies\":[\"generate_script\"],\"id\":\"step-9072aad2fe3db3508e3d\",\"last_attempt_id\":\"attempt-20440b1079dfd27fc3bc\",\"output\":{\"plan_id\":\"plan-f428a9999f581e8326a6\",\"saved\":true},\"plan_id\":\"lean\",\"status\":\"succeeded\"},\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-c20736be3487bd975bef\",\"last_attempt_id\":\"attempt-29c6743d844a13cc76e6\",\"output\":{\"materials\":[{\"id\":\"A04\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创校园手机镜头\",\"topic\":\"校园生活\"}]},\"plan_id\":\"lean\",\"status\":\"succeeded\"}}}"
+    },
+    {
+      "id": "activity-027",
+      "fingerprint": "acd9e8e48982708305df0b4343258f205a479d7731d726e6eba55d6838413e96",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":12,\"deadline_gap_minutes\":45,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":8,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":8,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},\"request\":{\"budget\":0,\"deadline\":\"2026-11-05T09:50+08:00\",\"request_id\":\"activity-027\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"新品发布\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    },
+    {
+      "id": "activity-028",
+      "fingerprint": "daacf996ba449ffe49d81042688c144c97950fc95f7d5b882990ff80f1624351",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[],\"last_error\":null,\"last_estimate\":null,\"request\":{\"budget\":null,\"deadline\":null,\"request_id\":\"activity-028\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"新品发布\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    },
+    {
+      "id": "activity-030",
+      "fingerprint": "dc7c04cd3fb4ad0718c7f6adca88a521fe268120a1ed8d196034d9b07850780f",
+      "state": "{\"attempts\":[{\"code\":\"SUCCEEDED\",\"cost\":4,\"id\":\"attempt-679c564cafef1d3ffaee\",\"minutes\":20,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"search_assets\"},{\"code\":\"SUCCEEDED\",\"cost\":7,\"id\":\"attempt-c89a80ef8ca9dcc16996\",\"minutes\":70,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"generate_script\"},{\"code\":\"SUCCEEDED\",\"cost\":1,\"id\":\"attempt-6db675e9bcb681df6b2a\",\"minutes\":5,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"save_plan\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":95,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":8,\"remaining_minutes\":75,\"remaining_steps\":[\"generate_script\",\"save_plan\"],\"revision\":1,\"spent_so_far\":4},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11},\"request\":{\"budget\":15,\"deadline\":\"2026-11-05T10:35+08:00\",\"request_id\":\"activity-030\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":3,\"saved_plan\":{\"budget\":15,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T10:35+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-678a82f810435542118e\",\"materials\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":12,\"variant\":\"premium\"},\"spent\":12,\"steps\":{\"generate_script\":{\"attempt_count\":1,\"dependencies\":[\"search_assets\"],\"id\":\"step-745af5aae7b01c8b93e1\",\"last_attempt_id\":\"attempt-c89a80ef8ca9dcc16996\",\"output\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"save_plan\":{\"attempt_count\":1,\"dependencies\":[\"generate_script\"],\"id\":\"step-1299fe3e7b50e72791aa\",\"last_attempt_id\":\"attempt-6db675e9bcb681df6b2a\",\"output\":{\"plan_id\":\"plan-678a82f810435542118e\",\"saved\":true},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-b443c0d557931567cf04\",\"last_attempt_id\":\"attempt-679c564cafef1d3ffaee\",\"output\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"plan_id\":\"premium\",\"status\":\"succeeded\"}}}"
+    },
+    {
+      "id": "activity-031",
+      "fingerprint": "99e0bc771a149041e2337d45452ce3cdf45cf3a5e728f84cf644b0ad4223bdf7",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":7,\"deadline_gap_minutes\":75,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":3,\"deadline_gap_minutes\":20,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":3,\"deadline_gap_minutes\":20,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},\"request\":{\"budget\":5,\"deadline\":\"2026-11-05T09:20+08:00\",\"request_id\":\"activity-031\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"夏日旅行\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    },
+    {
+      "id": "activity-034",
+      "fingerprint": "1299753c8c03c615000baec055edaeab73860227e84450a8f29fa2e32bc85775",
+      "state": "{\"attempts\":[{\"code\":\"NO_ASSETS\",\"cost\":2,\"id\":\"attempt-a27a0671f286aefda8ea\",\"minutes\":10,\"plan_id\":\"lean\",\"status\":\"failed\",\"tool\":\"search_assets\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":10,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":2,\"deadline_gap_minutes\":55,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0}],\"last_error\":{\"code\":\"NO_ASSETS\",\"tool\":\"search_assets\"},\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},\"request\":{\"budget\":10,\"deadline\":\"2026-11-05T09:40+08:00\",\"request_id\":\"activity-034\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"新品发布\"},\"revision\":1,\"saved_plan\":null,\"spent\":2,\"steps\":{\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-8bdc39263286540c9f97\",\"last_attempt_id\":\"attempt-a27a0671f286aefda8ea\",\"output\":null,\"plan_id\":\"lean\",\"status\":\"failed\"}}}"
+    },
+    {
+      "id": "activity-039",
+      "fingerprint": "9017c660c8395193f6b5674972ef43e06f2cff7d821aece89cacba238a35854c",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":7,\"deadline_gap_minutes\":45,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":3,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":3,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},\"request\":{\"budget\":5,\"deadline\":\"2026-11-05T09:50+08:00\",\"request_id\":\"activity-039\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"夏日旅行\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    },
+    {
+      "id": "activity-040",
+      "fingerprint": "18691ad4fc0d3b65dc1fbaaaddd4080e71bc5e0d2c5a11e3ad1e9d8bd6cf1303",
+      "state": "{\"attempts\":[{\"code\":\"SUCCEEDED\",\"cost\":4,\"id\":\"attempt-e75ec96561207643a4bb\",\"minutes\":20,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"search_assets\"},{\"code\":\"SUCCEEDED\",\"cost\":7,\"id\":\"attempt-3fca2994ba310da95c31\",\"minutes\":70,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"generate_script\"},{\"code\":\"SUCCEEDED\",\"cost\":1,\"id\":\"attempt-2df0f45c9c03c1d7425d\",\"minutes\":5,\"plan_id\":\"premium\",\"status\":\"succeeded\",\"tool\":\"save_plan\"}],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":95,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":8,\"remaining_minutes\":75,\"remaining_steps\":[\"generate_script\",\"save_plan\"],\"revision\":1,\"spent_so_far\":4},{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":12,\"budget_gap\":0,\"deadline_gap_minutes\":0,\"feasible\":true,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":1,\"remaining_minutes\":5,\"remaining_steps\":[\"save_plan\"],\"revision\":2,\"spent_so_far\":11},\"request\":{\"budget\":20,\"deadline\":\"2026-11-05T11:30+08:00\",\"request_id\":\"activity-040\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":3,\"saved_plan\":{\"budget\":20,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T11:30+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-af669669e2824d18672f\",\"materials\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":12,\"variant\":\"premium\"},\"spent\":12,\"steps\":{\"generate_script\":{\"attempt_count\":1,\"dependencies\":[\"search_assets\"],\"id\":\"step-7fd44d9f4d1037b4dd1f\",\"last_attempt_id\":\"attempt-3fca2994ba310da95c31\",\"output\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"save_plan\":{\"attempt_count\":1,\"dependencies\":[\"generate_script\"],\"id\":\"step-5653181e6576188dd0df\",\"last_attempt_id\":\"attempt-2df0f45c9c03c1d7425d\",\"output\":{\"plan_id\":\"plan-af669669e2824d18672f\",\"saved\":true},\"plan_id\":\"premium\",\"status\":\"succeeded\"},\"search_assets\":{\"attempt_count\":1,\"dependencies\":[],\"id\":\"step-31328cce345ee660e365\",\"last_attempt_id\":\"attempt-e75ec96561207643a4bb\",\"output\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"plan_id\":\"premium\",\"status\":\"succeeded\"}}}"
+    },
+    {
+      "id": "activity-041",
+      "fingerprint": "772ce4a35f66e2c9ceaac37071a284fbe2646ce4063c9999c42febefac59324e",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":7,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":3,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":3,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},\"request\":{\"budget\":5,\"deadline\":\"2026-11-05T11:30+08:00\",\"request_id\":\"activity-041\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"校园生活\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "attempt-06a9de5e1e27e047f19d",
+      "run_id": "activity-021",
+      "tool": "save_plan",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 1,
+      "minutes": 5,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-0d9128290e8097acae51",
+      "run_id": "activity-007",
+      "tool": "search_assets",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 4,
+      "minutes": 20,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-0efd4db525ecd1d4944b",
+      "run_id": "activity-015",
+      "tool": "search_assets",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 4,
+      "minutes": 20,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-20440b1079dfd27fc3bc",
+      "run_id": "activity-025",
+      "tool": "save_plan",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 1,
+      "minutes": 5,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-2390d300f2d4311f5817",
+      "run_id": "activity-014",
+      "tool": "search_assets",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 2,
+      "minutes": 10,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-288869204beab09e75ee",
+      "run_id": "activity-015",
+      "tool": "save_plan",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 1,
+      "minutes": 5,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-29c6743d844a13cc76e6",
+      "run_id": "activity-025",
+      "tool": "search_assets",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 2,
+      "minutes": 10,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-2df0f45c9c03c1d7425d",
+      "run_id": "activity-040",
+      "tool": "save_plan",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 1,
+      "minutes": 5,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-31a97fc8edc865bdfa40",
+      "run_id": "activity-006",
+      "tool": "search_assets",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 2,
+      "minutes": 10,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-3fca2994ba310da95c31",
+      "run_id": "activity-040",
+      "tool": "generate_script",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 7,
+      "minutes": 70,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-41d851fd7fc22586f1f6",
+      "run_id": "activity-014",
+      "tool": "generate_script",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 5,
+      "minutes": 25,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-43faad74e05fb0ef3a19",
+      "run_id": "activity-023",
+      "tool": "save_plan",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 1,
+      "minutes": 5,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-4fbec3e14320daf39ca4",
+      "run_id": "activity-003",
+      "tool": "generate_script",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 5,
+      "minutes": 25,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-5b44834afa5d54ba0de7",
+      "run_id": "activity-007",
+      "tool": "generate_script",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 7,
+      "minutes": 70,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-679c564cafef1d3ffaee",
+      "run_id": "activity-030",
+      "tool": "search_assets",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 4,
+      "minutes": 20,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-6db675e9bcb681df6b2a",
+      "run_id": "activity-030",
+      "tool": "save_plan",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 1,
+      "minutes": 5,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-707b07813fc7bcbdae49",
+      "run_id": "activity-019",
+      "tool": "save_plan",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 1,
+      "minutes": 5,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-7232c8a51526798648ba",
+      "run_id": "activity-017",
+      "tool": "search_assets",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 2,
+      "minutes": 10,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-73774c0098b557c57db8",
+      "run_id": "activity-019",
+      "tool": "generate_script",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 5,
+      "minutes": 25,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-7feddaa63bd7dd1e4e6e",
+      "run_id": "activity-014",
+      "tool": "save_plan",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 1,
+      "minutes": 5,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-82331c4006c7971ca532",
+      "run_id": "activity-006",
+      "tool": "save_plan",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 1,
+      "minutes": 5,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-8800644963b63991ae03",
+      "run_id": "activity-020",
+      "tool": "search_assets",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 4,
+      "minutes": 20,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-8823dbb8c63440654aab",
+      "run_id": "activity-021",
+      "tool": "search_assets",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 4,
+      "minutes": 20,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-9671fdb346159fdc7e1d",
+      "run_id": "activity-015",
+      "tool": "generate_script",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 7,
+      "minutes": 70,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-9e4de0e5cca86d05343b",
+      "run_id": "activity-023",
+      "tool": "search_assets",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 4,
+      "minutes": 20,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-a27a0671f286aefda8ea",
+      "run_id": "activity-034",
+      "tool": "search_assets",
+      "plan_id": "lean",
+      "status": "failed",
+      "cost": 2,
+      "minutes": 10,
+      "code": "NO_ASSETS"
+    },
+    {
+      "id": "attempt-a720c803b91f1d0ef0a4",
+      "run_id": "activity-017",
+      "tool": "save_plan",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 1,
+      "minutes": 5,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-acd73280e8056ac189a6",
+      "run_id": "activity-003",
+      "tool": "search_assets",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 2,
+      "minutes": 10,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-acfa05de3d2f5ea1bd54",
+      "run_id": "activity-003",
+      "tool": "save_plan",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 1,
+      "minutes": 5,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-adea0b0dafd67667ba0d",
+      "run_id": "activity-025",
+      "tool": "generate_script",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 5,
+      "minutes": 25,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-c0221c7b377c2c5581e0",
+      "run_id": "activity-021",
+      "tool": "generate_script",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 7,
+      "minutes": 70,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-c89a80ef8ca9dcc16996",
+      "run_id": "activity-030",
+      "tool": "generate_script",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 7,
+      "minutes": 70,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-ce22e14c0d281b3f8fb6",
+      "run_id": "activity-023",
+      "tool": "generate_script",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 7,
+      "minutes": 70,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-d3039d5f021202566b9e",
+      "run_id": "activity-017",
+      "tool": "generate_script",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 5,
+      "minutes": 25,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-dc21bda8db34b47bbeda",
+      "run_id": "activity-007",
+      "tool": "save_plan",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 1,
+      "minutes": 5,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-e07d041b1e1e8958a19b",
+      "run_id": "activity-012",
+      "tool": "search_assets",
+      "plan_id": "lean",
+      "status": "failed",
+      "cost": 2,
+      "minutes": 10,
+      "code": "NO_ASSETS"
+    },
+    {
+      "id": "attempt-e0b4eb76d882577b14dc",
+      "run_id": "activity-006",
+      "tool": "generate_script",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 5,
+      "minutes": 25,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-e4785fd190a82a3516dd",
+      "run_id": "activity-019",
+      "tool": "search_assets",
+      "plan_id": "lean",
+      "status": "succeeded",
+      "cost": 2,
+      "minutes": 10,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-e75ec96561207643a4bb",
+      "run_id": "activity-040",
+      "tool": "search_assets",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 4,
+      "minutes": 20,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-e9db8093420b79fccb66",
+      "run_id": "activity-020",
+      "tool": "generate_script",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 7,
+      "minutes": 70,
+      "code": "SUCCEEDED"
+    },
+    {
+      "id": "attempt-f24cdc132a5a84c03a58",
+      "run_id": "activity-020",
+      "tool": "save_plan",
+      "plan_id": "premium",
+      "status": "succeeded",
+      "cost": 1,
+      "minutes": 5,
+      "code": "SUCCEEDED"
+    }
+  ],
+  "plans": [
+    {
+      "id": "plan-1284ae33ccb85200b4b7",
+      "run_id": "activity-007",
+      "content": "{\"budget\":12,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T11:30+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-1284ae33ccb85200b4b7\",\"materials\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":12,\"variant\":\"premium\"}"
+    },
+    {
+      "id": "plan-2e95be2d56a783be59e4",
+      "run_id": "activity-017",
+      "content": "{\"budget\":10,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T09:50+08:00\",\"finish_at\":\"2026-11-05T09:40+08:00\",\"id\":\"plan-2e95be2d56a783be59e4\",\"materials\":{\"materials\":[{\"id\":\"A04\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创校园手机镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A04\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":8,\"variant\":\"lean\"}"
+    },
+    {
+      "id": "plan-3d574c5b208e20be48ce",
+      "run_id": "activity-023",
+      "content": "{\"budget\":12,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T10:35+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-3d574c5b208e20be48ce\",\"materials\":{\"materials\":[{\"id\":\"A01\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创海边旅行镜头\",\"topic\":\"夏日旅行\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A01\"],\"script\":\"围绕夏日旅行：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"夏日旅行内容活动\"},\"topic\":\"夏日旅行\",\"total_cost\":12,\"variant\":\"premium\"}"
+    },
+    {
+      "id": "plan-3ea1d8b94f4d9c361cb2",
+      "run_id": "activity-006",
+      "content": "{\"budget\":20,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T09:40+08:00\",\"finish_at\":\"2026-11-05T09:40+08:00\",\"id\":\"plan-3ea1d8b94f4d9c361cb2\",\"materials\":{\"materials\":[{\"id\":\"A04\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创校园手机镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A04\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":8,\"variant\":\"lean\"}"
+    },
+    {
+      "id": "plan-678a82f810435542118e",
+      "run_id": "activity-030",
+      "content": "{\"budget\":15,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T10:35+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-678a82f810435542118e\",\"materials\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":12,\"variant\":\"premium\"}"
+    },
+    {
+      "id": "plan-8cebd042e0e3e71b1b64",
+      "run_id": "activity-020",
+      "content": "{\"budget\":12,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T11:30+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-8cebd042e0e3e71b1b64\",\"materials\":{\"materials\":[{\"id\":\"A01\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创海边旅行镜头\",\"topic\":\"夏日旅行\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A01\"],\"script\":\"围绕夏日旅行：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"夏日旅行内容活动\"},\"topic\":\"夏日旅行\",\"total_cost\":12,\"variant\":\"premium\"}"
+    },
+    {
+      "id": "plan-8daeb2c3971ff6fdeb27",
+      "run_id": "activity-015",
+      "content": "{\"budget\":12,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T10:35+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-8daeb2c3971ff6fdeb27\",\"materials\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":12,\"variant\":\"premium\"}"
+    },
+    {
+      "id": "plan-a110ab34729d28d4a10d",
+      "run_id": "activity-014",
+      "content": "{\"budget\":10,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T10:35+08:00\",\"finish_at\":\"2026-11-05T09:40+08:00\",\"id\":\"plan-a110ab34729d28d4a10d\",\"materials\":{\"materials\":[{\"id\":\"A02\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创手机旅行镜头\",\"topic\":\"夏日旅行\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A02\"],\"script\":\"围绕夏日旅行：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"夏日旅行内容活动\"},\"topic\":\"夏日旅行\",\"total_cost\":8,\"variant\":\"lean\"}"
+    },
+    {
+      "id": "plan-a6a54e8077327941e366",
+      "run_id": "activity-003",
+      "content": "{\"budget\":8,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T10:35+08:00\",\"finish_at\":\"2026-11-05T09:40+08:00\",\"id\":\"plan-a6a54e8077327941e366\",\"materials\":{\"materials\":[{\"id\":\"A04\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创校园手机镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A04\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":8,\"variant\":\"lean\"}"
+    },
+    {
+      "id": "plan-ae540377f3cfbb33d72f",
+      "run_id": "activity-021",
+      "content": "{\"budget\":20,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T10:35+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-ae540377f3cfbb33d72f\",\"materials\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":12,\"variant\":\"premium\"}"
+    },
+    {
+      "id": "plan-af669669e2824d18672f",
+      "run_id": "activity-040",
+      "content": "{\"budget\":20,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T11:30+08:00\",\"finish_at\":\"2026-11-05T10:35+08:00\",\"id\":\"plan-af669669e2824d18672f\",\"materials\":{\"materials\":[{\"id\":\"A03\",\"license\":\"synthetic-approved\",\"tier\":\"premium\",\"title\":\"原创校园日常镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A03\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"精细制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":12,\"variant\":\"premium\"}"
+    },
+    {
+      "id": "plan-f2cde3f64ee214bac74f",
+      "run_id": "activity-019",
+      "content": "{\"budget\":12,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T09:50+08:00\",\"finish_at\":\"2026-11-05T09:40+08:00\",\"id\":\"plan-f2cde3f64ee214bac74f\",\"materials\":{\"materials\":[{\"id\":\"A02\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创手机旅行镜头\",\"topic\":\"夏日旅行\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A02\"],\"script\":\"围绕夏日旅行：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"夏日旅行内容活动\"},\"topic\":\"夏日旅行\",\"total_cost\":8,\"variant\":\"lean\"}"
+    },
+    {
+      "id": "plan-f428a9999f581e8326a6",
+      "run_id": "activity-025",
+      "content": "{\"budget\":10,\"completed_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"deadline\":\"2026-11-05T11:30+08:00\",\"finish_at\":\"2026-11-05T09:40+08:00\",\"id\":\"plan-f428a9999f581e8326a6\",\"materials\":{\"materials\":[{\"id\":\"A04\",\"license\":\"synthetic-approved\",\"tier\":\"lean\",\"title\":\"原创校园手机镜头\",\"topic\":\"校园生活\"}]},\"published\":false,\"script\":{\"asset_ids\":[\"A04\"],\"script\":\"围绕校园生活：开场引出主题；结合授权合成素材展示三个内容亮点；结尾引导用户参与。\",\"style\":\"轻量制作方案\",\"synthetic\":true,\"title\":\"校园生活内容活动\"},\"topic\":\"校园生活\",\"total_cost\":8,\"variant\":\"lean\"}"
+    }
+  ]
+}

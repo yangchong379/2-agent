@@ -4,7 +4,7 @@
 
 项目仓库：[yangchong379/2-agent](https://github.com/yangchong379/2-agent)。这是独立项目；素材审核与排期项目位于另一个仓库。本项目的工具调用协议与本机密码输入复用了前一项目中已验证的通用适配逻辑，预算、任务状态与计费模块独立实现，不依赖另一目录。
 
-**当前已验证：34个自动化测试通过，13/13组离线场景通过；DeepSeek真实模型首轮10/13通过，三项传输错误定向重跑3/3通过；两轮源码相同，累计13类场景均有通过证据，非一次全量13/13或稳定成功率。首轮失败完整保留。Mock仅验证流程。**
+**核心历史已验证：34个自动化测试通过，13/13组离线场景通过；DeepSeek真实模型首轮10/13通过，三项传输错误定向重跑3/3通过；两轮源码相同，累计13类场景均有通过证据，非一次全量13/13或稳定成功率。首轮失败完整保留。Mock仅验证流程。**
 
 ## 评审入口
 
@@ -110,3 +110,15 @@ py -3.11 scripts/connect_deepseek.py --retry-failed
 | 4 | 输入、配置、文件或数据库初始化错误 |
 
 成本、时间、脚本和素材均为合成业务模拟；无真实发布接口。多人认证、跨服务账单、真实耗时预测、任务撤销和跨请求结果共享不在当前范围。GitHub最新提交SHA用`git rev-parse HEAD`获取，提交信息见[SUBMISSION.md](SUBMISSION.md)。
+
+## 连续混合需求评估（新增）
+
+新增两天、两个随机种子的连续需求回放，共96条请求；同一天所有到达共用一个SQLite数据库，每次到达重新连接。实际业务目标完成25/96，边界和状态检查96/96。这些是Mock离线结果，不能证明真实模型线上完成率。[流量评估说明](docs/08-product-traffic.md)、[第1天实际记录](examples/traffic/mock-product-day1/REPORT.md)、[第2天实际记录](examples/traffic/mock-product-day2/REPORT.md)、[当前36个回归测试](examples/traffic/regression-tests.txt)。
+
+```bash
+python scripts/traffic.py --model mock --count 48 --seed 20261104 --output .runtime/traffic-new
+# 配置模型环境变量后使用真实选择：
+python scripts/traffic.py --model live --count 24 --seed 20261104 --output .runtime/live-traffic-new
+```
+
+每条记录包含输入、实际输出/Trace、前后全量状态；没有预设“每类必须成功”的理想动作路径。未完成与保护检查通过分开计数；历史验收记录不覆盖，历史源码摘要属于当时src/tests/scripts集合。本次新增评估脚本和测试改变整体摘要，运行src与上次交付基线逐字相同。

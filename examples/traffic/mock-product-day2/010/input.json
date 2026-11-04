@@ -1,0 +1,14 @@
+{
+  "sequence": 10,
+  "arrival_minute": 28,
+  "operator": "运营B",
+  "intent": "new",
+  "request": {
+    "request_id": "activity-009",
+    "topic": "夏日旅行",
+    "budget": 10,
+    "start_at": "2026-11-05T09:00+08:00",
+    "deadline": "2026-11-05T09:20+08:00"
+  },
+  "service_fault": null
+}

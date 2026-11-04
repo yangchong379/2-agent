@@ -1,0 +1,11 @@
+{
+  "runs": [
+    {
+      "id": "activity-000",
+      "fingerprint": "100b0e7c903a6c133ba488c8d9f4b571cb4c7ea165dbe47e212f4b18d7965981",
+      "state": "{\"attempts\":[],\"effective_start\":\"2026-11-05T09:00+08:00\",\"elapsed_minutes\":0,\"estimates\":[{\"base_plan_cost\":12,\"budget_gap\":7,\"deadline_gap_minutes\":55,\"feasible\":false,\"ok\":true,\"plan_id\":\"premium\",\"projected_finish\":\"2026-11-05T10:35+08:00\",\"projected_total_cost\":12,\"remaining_cost\":12,\"remaining_minutes\":95,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},{\"base_plan_cost\":8,\"budget_gap\":3,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0}],\"last_error\":null,\"last_estimate\":{\"base_plan_cost\":8,\"budget_gap\":3,\"deadline_gap_minutes\":0,\"feasible\":false,\"ok\":true,\"plan_id\":\"lean\",\"projected_finish\":\"2026-11-05T09:40+08:00\",\"projected_total_cost\":8,\"remaining_cost\":8,\"remaining_minutes\":40,\"remaining_steps\":[\"search_assets\",\"generate_script\",\"save_plan\"],\"revision\":0,\"spent_so_far\":0},\"request\":{\"budget\":5,\"deadline\":\"2026-11-05T09:40+08:00\",\"request_id\":\"activity-000\",\"start_at\":\"2026-11-05T09:00+08:00\",\"topic\":\"新品发布\"},\"revision\":0,\"saved_plan\":null,\"spent\":0,\"steps\":{}}"
+    }
+  ],
+  "attempts": [],
+  "plans": []
+}
