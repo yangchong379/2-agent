@@ -1,0 +1,39 @@
+test_actual_observation_and_original_call_id_are_replayed (test_interfaces.AdapterTests.test_actual_observation_and_original_call_id_are_replayed) ... ok
+test_error_does_not_expose_provider_body (test_interfaces.AdapterTests.test_error_does_not_expose_provider_body) ... ok
+test_missing_credentials_and_unsafe_urls_are_rejected (test_interfaces.AdapterTests.test_missing_credentials_and_unsafe_urls_are_rejected) ... ok
+test_multi_call_rejection_returns_no_execution_results_for_each_call (test_interfaces.AdapterTests.test_multi_call_rejection_returns_no_execution_results_for_each_call) ... ok
+test_non_thinking_mode_requires_a_model_tool_choice (test_interfaces.AdapterTests.test_non_thinking_mode_requires_a_model_tool_choice) ... ok
+test_cli_exit_codes_and_output (test_interfaces.CliTests.test_cli_exit_codes_and_output) ... ok
+test_latest_successful_retry_does_not_request_a_new_secret (test_interfaces.HelperTests.test_latest_successful_retry_does_not_request_a_new_secret) ... ok
+test_local_secret_is_not_printed_and_environment_is_restored (test_interfaces.HelperTests.test_local_secret_is_not_printed_and_environment_is_restored) ... ok
+test_new_evaluation_directory_preserves_previous_runs (test_interfaces.HelperTests.test_new_evaluation_directory_preserves_previous_runs) ... ok
+test_windows_dialog_masks_input (test_interfaces.HelperTests.test_windows_dialog_masks_input) ... ok
+test_budget_replans_from_twelve_to_eight (test_planner.PlannerTests.test_budget_replans_from_twelve_to_eight) ... ok
+test_deadline_replans_without_changing_original_deadline (test_planner.PlannerTests.test_deadline_replans_without_changing_original_deadline) ... ok
+test_default_start_is_persisted_once_on_repeated_request (test_planner.PlannerTests.test_default_start_is_persisted_once_on_repeated_request) ... ok
+test_dependencies_cannot_be_bypassed (test_planner.PlannerTests.test_dependencies_cannot_be_bypassed) ... ok
+test_duplicate_run_never_rebills_or_creates_second_plan (test_planner.PlannerTests.test_duplicate_run_never_rebills_or_creates_second_plan) ... ok
+test_failed_cost_is_not_refunded_when_no_alternative_fits (test_planner.PlannerTests.test_failed_cost_is_not_refunded_when_no_alternative_fits) ... ok
+test_failed_step_resumes_after_reopening_database (test_planner.PlannerTests.test_failed_step_resumes_after_reopening_database) ... ok
+test_infeasible_returns_gaps_without_executing_business_tools (test_planner.PlannerTests.test_infeasible_returns_gaps_without_executing_business_tools) ... ok
+test_invalid_inputs_and_dataset_changes (test_planner.PlannerTests.test_invalid_inputs_and_dataset_changes) ... ok
+test_missing_budget_and_deadline_each_stop_without_charges (test_planner.PlannerTests.test_missing_budget_and_deadline_each_stop_without_charges) ... ok
+test_model_cannot_inject_budget_or_publish (test_planner.PlannerTests.test_model_cannot_inject_budget_or_publish) ... ok
+test_new_estimate_required_after_every_charged_attempt (test_planner.PlannerTests.test_new_estimate_required_after_every_charged_attempt) ... ok
+test_no_assets_records_real_search_fee_and_stops (test_planner.PlannerTests.test_no_assets_records_real_search_fee_and_stops) ... ok
+test_normal_completes_with_exact_ledger_and_dependencies (test_planner.PlannerTests.test_normal_completes_with_exact_ledger_and_dependencies) ... ok
+test_over_budget_action_is_rejected_before_charge (test_planner.PlannerTests.test_over_budget_action_is_rejected_before_charge) ... ok
+test_persistent_failure_is_not_success_and_keeps_partial_work (test_planner.PlannerTests.test_persistent_failure_is_not_success_and_keeps_partial_work) ... ok
+test_protocol_correction_and_fatal_errors_have_explicit_boundaries (test_planner.PlannerTests.test_protocol_correction_and_fatal_errors_have_explicit_boundaries) ... ok
+test_same_request_id_cannot_change_budget_or_deadline (test_planner.PlannerTests.test_same_request_id_cannot_change_budget_or_deadline) ... ok
+test_save_failure_resume_reuses_assets_and_script (test_planner.PlannerTests.test_save_failure_resume_reuses_assets_and_script) ... ok
+test_sql_failure_rolls_back_plan_charge_and_step (test_planner.PlannerTests.test_sql_failure_rolls_back_plan_charge_and_step) ... ok
+test_step_limit_returns_partial_work_without_faking_saved (test_planner.PlannerTests.test_step_limit_returns_partial_work_without_faking_saved) ... ok
+test_successful_step_is_reused_under_concurrent_execution (test_planner.PlannerTests.test_successful_step_is_reused_under_concurrent_execution) ... ok
+test_tool_failure_replans_and_retains_successful_assets (test_planner.PlannerTests.test_tool_failure_replans_and_retains_successful_assets) ... ok
+test_zero_budget_is_a_limit_not_missing_input (test_planner.PlannerTests.test_zero_budget_is_a_limit_not_missing_input) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 4.590s
+
+OK

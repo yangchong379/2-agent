@@ -1,0 +1,2 @@
+# Keep actual evidence hashes reproducible on Windows and Linux.
+examples/**/*.json -text

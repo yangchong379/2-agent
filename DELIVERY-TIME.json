@@ -1,0 +1,8 @@
+{
+  "timezone": "Asia/Hong_Kong",
+  "first_recorded_at": "2026-11-04T18:07:25+08:00",
+  "preparation_recorded_at": "2026-11-04T18:30:04.551079+08:00",
+  "elapsed_wall_clock_minutes": 22.66,
+  "scope": "AI implementation, dialogue and waiting until this preparation record; not candidate independent coding time",
+  "candidate_independent_coding_time": "not recorded"
+}
